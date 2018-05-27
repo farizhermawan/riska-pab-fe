@@ -73,17 +73,72 @@
     </div>
     <div class="row">
       <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-        <span class="service-icon rounded-circle mx-auto mb-3 text-quota">
-            100
-        </span>
+        <span class="service-icon rounded-circle mx-auto mb-3 text-quota">35</span>
         <h4>
           <strong>Cinematografi</strong>
         </h4>
         <p class="text-faded mb-0"></p>
       </div>
+
+      <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+        <span class="service-icon rounded-circle mx-auto mb-3 text-quota">20</span>
+        <h4>
+          <strong>SDIS</strong>
+        </h4>
+        <p class="text-faded mb-0"></p>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+        <span class="service-icon rounded-circle mx-auto mb-3 text-quota">80</span>
+        <h4>
+          <strong>SDTNI</strong>
+        </h4>
+        <p class="text-faded mb-0"></p>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+        <span class="service-icon rounded-circle mx-auto mb-3 text-quota">30</span>
+        <h4>
+          <strong>BMAQ</strong>
+        </h4>
+        <p class="text-faded mb-0"></p>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+        <span class="service-icon rounded-circle mx-auto mb-3 text-quota">28</span>
+        <h4>
+          <strong>Sister Club</strong>
+        </h4>
+        <p class="text-faded mb-0"></p>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+        <span class="service-icon rounded-circle mx-auto mb-3 text-quota">10</span>
+        <h4>
+          <strong>Thifan Po khan</strong>
+        </h4>
+        <p class="text-faded mb-0"></p>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+        <span class="service-icon rounded-circle mx-auto mb-3 text-quota">20</span>
+        <h4>
+          <strong>Volaris</strong>
+        </h4>
+        <p class="text-faded mb-0"></p>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+        <span class="service-icon rounded-circle mx-auto mb-3 text-quota">3 Juli</span>
+        <h4>
+          <strong>Batas Pendaftaran</strong>
+        </h4>
+        <p class="text-faded mb-0"></p>
+      </div>
     </div>
-    <div class="row">
+    <div class="row" style="margin-bottom: -70px">
       <div class="col-sm-12">
+        <br/>
         <a href="../portal/" class="btn btn-warning btn-lg">Daftar Sekarang</a>
       </div>
     </div>
@@ -91,7 +146,7 @@
 </section>
 
 <!-- Portfolio -->
-<section class="content-section" id="portfolio">
+<section class="content-section" id="portfolio" style="padding-top: 2rem; padding-bottom: 3rem">
     <div class="container">
         <div class="content-section-heading text-center">
             <h3 class="text-secondary mb-0">Departemen</h3>
@@ -149,7 +204,8 @@
 <!-- Callout -->
 <section class="callout">
   <div class="container text-center">
-    <h2 class="mx-auto mb-5">RISKA<br/><em style="white-space: nowrap">Muda Gaul Berkarya!</em></h2>
+    <h2 class="mx-auto mb-5" style="margin-bottom: 10px !important;">R.I.S.K.A</h2>
+    <h4>Muda, Gaul, Berkarya!</h4>
   </div>
 </section>
 
@@ -178,7 +234,7 @@
                 </a>
             </li>
         </ul>
-        <p class="text-muted small mb-0">Copyright &copy; RISKA 2018</p>
+        <p class="text-muted small mb-0">Copyright &copy; RISKA <?=date("Y")?></p>
     </div>
 </footer>
 
