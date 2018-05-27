@@ -211,7 +211,7 @@
 
 <!-- Map -->
 <section id="contact" class="map">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.471510943438!2d106.82993804984797!3d-6.201358562453269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f41724c12a4f%3A0x222525cca29b7b36!2sMasjid+Agung+Sunda+Kelapa!5e0!3m2!1sen!2sid!4v1527417666046" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.471510943438!2d106.82993804984797!3d-6.201358562453269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f41724c12a4f%3A0x222525cca29b7b36!2sMasjid+Agung+Sunda+Kelapa!5e0!3m2!1sen!2sid!4v1527417666046" frameborder="0" style="border:0; width: 100%; height: 100%; max-height: 300px" allowfullscreen></iframe>
 </section>
 
 <!-- Footer -->
