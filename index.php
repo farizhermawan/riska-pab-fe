@@ -33,19 +33,19 @@
 <nav id="sidebar-wrapper">
     <ul class="sidebar-nav">
         <li class="sidebar-brand">
-            <a class="js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+            <a class="js-scroll-trigger" href="#page-top">PAB RISKA 2018</a>
         </li>
         <li class="sidebar-nav-item">
             <a class="js-scroll-trigger" href="#page-top">Home</a>
         </li>
         <li class="sidebar-nav-item">
-            <a class="js-scroll-trigger" href="#about">About</a>
+            <a class="js-scroll-trigger" href="#about">Registration</a>
         </li>
         <li class="sidebar-nav-item">
-            <a class="js-scroll-trigger" href="#services">Services</a>
+            <a class="js-scroll-trigger" href="#services">Contact Us</a>
         </li>
         <li class="sidebar-nav-item">
-            <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
+            <a class="js-scroll-trigger" href="#callout">About Us</a>
         </li>
         <li class="sidebar-nav-item">
             <a class="js-scroll-trigger" href="#contact">Contact</a>
@@ -65,7 +65,7 @@
 </div>
 
 <!-- Quota -->
-<section class="content-section bg-primary text-white text-center" id="quota" style="padding-top: 10px">
+<section class="content-section bg-primary text-white text-center" id="about" style="padding-top: 10px">
   <div class="container">
     <div class="content-section-heading">
       <h3 class="text-secondary mb-0">Kuota Terbatas!!</h3>
@@ -152,54 +152,8 @@
             <h3 class="text-secondary mb-0">Departemen</h3>
             <h2 class="mb-5">at RISKA Menteng</h2>
         </div>
-        <div class="row no-gutters">
-            <div class="col-lg-6">
-                <a class="portfolio-item" href="#">
-              <span class="caption">
-                <span class="caption-content">
-                  <h2>Stationary</h2>
-                  <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
-                </span>
-              </span>
-                    <img class="img-fluid" src="assets/img/portfolio-1.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-6">
-                <a class="portfolio-item" href="#">
-              <span class="caption">
-                <span class="caption-content">
-                  <h2>Ice Cream</h2>
-                  <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
-                </span>
-              </span>
-                    <img class="img-fluid" src="assets/img/portfolio-2.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-6">
-                <a class="portfolio-item" href="#">
-              <span class="caption">
-                <span class="caption-content">
-                  <h2>Strawberries</h2>
-                  <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
-                </span>
-              </span>
-                    <img class="img-fluid" src="assets/img/portfolio-3.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-6">
-                <a class="portfolio-item" href="#">
-              <span class="caption">
-                <span class="caption-content">
-                  <h2>Workspace</h2>
-                  <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
-                </span>
-              </span>
-                    <img class="img-fluid" src="assets/img/portfolio-4.jpg" alt="">
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
+
 
 <!-- Callout -->
 <section class="callout">
@@ -207,6 +161,50 @@
     <h2 class="mx-auto mb-5" style="margin-bottom: 10px !important;">R.I.S.K.A</h2>
     <h4>Muda, Gaul, Berkarya!</h4>
   </div>
+</section>
+
+<section class="content-section bg-primary text-white text-center" id="services">
+    <div class="container">
+        <div class="content-section-heading">
+
+            <h2 class="text-secondary mb-0">CONTACT US</h2><br><br><br>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-screen-smartphone"></i>
+          </span>
+                <h4>
+                    <strong>RISKA</strong>
+                </h4>
+                <p class="text-faded mb-0">Remaja Islam Sunda Kelapa</p>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-pencil"></i>
+          </span>
+                <h4>
+                    <strong>LOKASI</strong>
+                </h4>
+                <p class="text-faded mb-0">Jalan Taman Sunda Kelapa No.16, RT.6/RW.4, Menteng, RT.6/RW.4, Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10310</p>
+            </div>
+
+
+
+            <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+                Pertanyaan atau Saran silahkan kirimkan melalui from di bawah ini :<br></br>
+                <form action="send.php" method="post">
+                    <p><input type="text" name="email" placeholder="Your Email" size="30" required /></p>
+                    <p><input type="text" name="name" placeholder="Your Name" size="30" required /></p>
+                    <p><input type="text" name="subject" placeholder="Subject" size="50" required /></p>
+                    <p><textarea name="message" placeholder="Your Message" rows="7" cols="50" required></textarea></p>
+                    <p><input type="submit" name="Submit" value="Submit" /> <input type="reset" value="Delete" /></p>
+                </form>
+
+
+
+        </div>
+    </div>
 </section>
 
 <!-- Map -->
