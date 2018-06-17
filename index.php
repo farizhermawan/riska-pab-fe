@@ -22,7 +22,6 @@
 
   <!-- Custom CSS -->
   <link href="assets/css/stylish-portfolio.min.css" rel="stylesheet">
-  <link href="assets/css/countdown.css" rel="stylesheet">
 
 </head>
 
@@ -157,22 +156,6 @@
          </div>
      </div>
  </section>
-
-
-
- <!-- Portfolio -->
-<section class="content-section" id="portfolio" style="padding-top: 2rem; padding-bottom: 3rem">
-  <div class="container">
-    <div id="countdown">
-      <div id='tiles'></div>
-      <div class="labels">
-        <li>Days</li>
-        <li>Hours</li>
-        <li>Mins</li>
-        <li>Secs</li>
-      </div>
-    </div>
-  </section>
 
   <!-- Callout -->
   <section class="callout">
@@ -325,9 +308,6 @@
   <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
     <i class="fa fa-angle-up"></i>
   </a>
-  <!-- countdown   -->
-  <script src="assets/js/countdown.js"></script>
-
 
 
   <!-- Bootstrap core JavaScript -->

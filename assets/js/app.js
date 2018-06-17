@@ -65,7 +65,7 @@ $('.map').on('click', onMapClickHandler);
 
 var gallery = blueimp.Gallery([
     {
-        title: 'Example',
+        title: 'PAB RISKA',
         href: 'assets/images/slide-one.jpg',
         type: 'image/jpeg',
         thumbnail: 'images/slide-one.jpg'
