@@ -74,3 +74,4 @@ var gallery = blueimp.Gallery([
     container: '#blueimp-gallery-carousel',
     carousel: true
 });
+
