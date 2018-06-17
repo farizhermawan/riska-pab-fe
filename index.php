@@ -116,7 +116,7 @@
       <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
         <span class="service-icon rounded-circle mx-auto mb-3 text-quota">30</span>
         <h6>
-          <strong>Thifan Po khan</strong>
+          <strong>Tifan Po Khan</strong>
         </h6>
         <p class="text-faded mb-0"></p>
       </div>
@@ -230,7 +230,7 @@
           </span>
 
         <h7>
-          <strong>THIFAN PO KHAN</strong>
+          <strong>TIFAN PO KHAN</strong>
         </h7>
         <p class="text-faded mb-0">Ikhwan
           <a href="https://api.whatsapp.com/send?phone=6281228095118" style="color: #FFD700;">(0812 2809 5118)</a>
