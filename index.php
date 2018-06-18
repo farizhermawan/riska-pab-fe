@@ -148,7 +148,7 @@
           Info Lengkap Pendaftaran<br/>PAB Riska 2018 Batch 2
         </a>
 
-      </div>C:\xampp\htdocs\other\riska\pab-fe\index.php
+      </div>
     </div>
   </div>
 </section>
