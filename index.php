@@ -144,7 +144,7 @@
           <a href="../portal/" class="btn btn-warning btn-lg">Daftar Sekarang</a>
         <br/>
         <br/>
-        <a href="assets/file/Alur Pendaftaran PAB RISKA 2018 Batch 2.pdf" class="btn btn-lg btn-success">
+        <a href="https://bit.ly/2JVzuqJ" class="btn btn-lg btn-success">
           Info Lengkap Pendaftaran<br/>PAB Riska 2018 Batch 2
         </a>
 
