@@ -39,7 +39,7 @@
       <a class="js-scroll-trigger" href="#page-top">Home</a>
     </li>
     <li class="sidebar-nav-item">
-      <a class="js-scroll-trigger" href="#about">Information & Quota</a>
+      <a class="js-scroll-trigger" href="#about">Information</a>
     </li>
     <li class="sidebar-nav-item">
       <a class="js-scroll-trigger" href="#contact">Contact Us</a>
@@ -69,91 +69,113 @@
 <section class="content-section bg-primary text-white text-center" id="about" style="padding-top: 10px">
   <div class="container">
     <div class="content-section-heading">
-      <h3 class="text-secondary mb-0">Kuota Terbatas!!</h3>
-      <h3 class="mb-5">Sisa Kuota PAB RISKA 2018 Batch 2</h3>
+      <h5 class="text-secondary mb-0">DEPARTEMEN AT RISKAMENTENG</h5>
+      <h3 class="mb-5">PAB RISKA 2018 Batch 2</h3>
     </div>
     <div class="row">
       <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-        <span class="service-icon rounded-circle mx-auto mb-3 text-quota">30</span>
-        <h6>
-          <strong>Cinematografi</strong>
-        </h6>
-        <p class="text-faded mb-0"></p>
-      </div>
+          <!--<span class="service-icon rounded-circle mx-auto mb-3 text-quota">30</span>
+            <h6>
+              <strong>Cinematografi</strong>
+            </h6>-->
+          <span class="service-icon rounded-circle mx-auto mb-3 text-quota" style="font-size: 15px;">
+           <strong>Cinematografi</strong>
+         </span>
 
-      <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-        <span class="service-icon rounded-circle mx-auto mb-3 text-quota">30</span>
-        <h6>
-          <strong>SDIS</strong>
-        </h6>
-        <p class="text-faded mb-0"></p>
-      </div>
+          <p class="text-faded mb-0"></p>
+        </div>
 
-      <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-        <span class="service-icon rounded-circle mx-auto mb-3 text-quota">30</span>
-        <h6>
-          <strong>SDTNI</strong>
-        </h6>
-        <p class="text-faded mb-0"></p>
-      </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <!--<span class="service-icon rounded-circle mx-auto mb-3 text-quota">30</span>
+            <h6>
+              <strong>SDIS</strong>
+            </h6>-->
+            <span class="service-icon rounded-circle mx-auto mb-3 text-quota" style="font-size: 15px;">
+           <strong>SDIS</strong>
+         </span>
+            <p class="text-faded mb-0"></p>
+          </div>
 
-      <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-        <span class="service-icon rounded-circle mx-auto mb-3 text-quota">30</span>
-        <h6>
-          <strong>BMAQ</strong>
-        </h6>
-        <p class="text-faded mb-0"></p>
-      </div>
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+              <!--<span class="service-icon rounded-circle mx-auto mb-3 text-quota">30</span>
+              <h6>
+                <strong>SDTNI</strong>
+              </h6>-->
+              <span class="service-icon rounded-circle mx-auto mb-3 text-quota" style="font-size: 15px;">
+           <strong>SDTNI</strong>
+         </span>
+              <p class="text-faded mb-0"></p>
+            </div>
 
-      <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-        <span class="service-icon rounded-circle mx-auto mb-3 text-quota">30</span>
-        <h6>
-          <strong>Sister Club</strong>
-        </h6>
-        <p class="text-faded mb-0"></p>
-      </div>
+            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                <!--<span class="service-icon rounded-circle mx-auto mb-3 text-quota">30</span>
+                <h6>
+                  <strong>BMAQ</strong>
+                </h6>-->
+                <span class="service-icon rounded-circle mx-auto mb-3 text-quota" style="font-size: 15px;">
+           <strong>BMAQ</strong>
+         </span>
+                <p class="text-faded mb-0"></p>
+              </div>
 
-      <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-        <span class="service-icon rounded-circle mx-auto mb-3 text-quota">30</span>
-        <h6>
-          <strong>Tifan Po Khan</strong>
-        </h6>
-        <p class="text-faded mb-0"></p>
-      </div>
+              <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                  <!--<span class="service-icon rounded-circle mx-auto mb-3 text-quota">30</span>
+                  <h6>
+                    <strong>Sister Club</strong>
+                  </h6>-->
+                  <span class="service-icon rounded-circle mx-auto mb-3 text-quota" style="font-size: 15px;">
+           <strong>Sister Club</strong>
+         </span>
+                  <p class="text-faded mb-0"></p>
+                </div>
 
-      <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-        <span class="service-icon rounded-circle mx-auto mb-3 text-quota">30</span>
-        <h6>
-          <strong>Volaris</strong>
-        </h6>
-        <p class="text-faded mb-0"></p>
-      </div>
+                <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                  <!--<span class="service-icon rounded-circle mx-auto mb-3 text-quota">30</span>
+                  <h6>
+                    <strong>Tifan Po Khan</strong>
+                  </h6>-->
+                    <span class="service-icon rounded-circle mx-auto mb-3 text-quota" style="font-size: 15px;">
+           <strong>Tifan Po Khan</strong>
+         </span>
+                  <p class="text-faded mb-0"></p>
+                </div>
 
-      <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-       <span class="service-icon rounded-circle mx-auto mb-3 text-white bg-danger" style="font-size: 20px;">
-         <strong>22/07/2018</strong>
-       </span>
-        <h6 class="text-white">
-          PENDAFTARAN DIMULAI
-        </h6>
-      </div>
-    </div>
-    <div class="row" style="margin-bottom: -70px">
-      <div class="col-sm-12">
-        <br/>
-          <a href="../portal/" class="btn btn-warning btn-lg">Daftar Sekarang</a>
-        <br/>
-        <br/>
-        <a href="https://bit.ly/2JVzuqJ" class="btn btn-lg btn-success">
-          Info Lengkap Pendaftaran<br/>PAB Riska 2018 Batch 2
-        </a>
+                <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                  <!--<span class="service-icon rounded-circle mx-auto mb-3 text-quota">30</span>
+                  <h6>
+                    <strong>Volaris</strong>
+                  </h6>-->
+                    <span class="service-icon rounded-circle mx-auto mb-3 text-quota" style="font-size: 15px;">
+           <strong>Volaris</strong>
+         </span>
+                  <p class="text-faded mb-0"></p>
+                </div>
 
-      </div>
-    </div>
-  </div>
-</section>
+                <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                 <span class="service-icon rounded-circle mx-auto mb-3 text-white bg-danger" style="font-size: 20px;">
+                   <strong>22/07/2018</strong>
+                 </span>
+                  <h6 class="text-white">
+                    PENDAFTARAN DIMULAI
+                  </h6>
+                </div>
+              </div>
+              <div class="row" style="margin-bottom: -70px">
+                <div class="col-sm-12">
+                  <br/>
+                    <!-- <a href="../portal/" class="btn btn-warning btn-lg">Daftar Sekarang</a> -->
+                  <br/>
+                  <br/>
+                  <a href="https://bit.ly/2JVzuqJ" class="btn btn-lg btn-success">
+                    Info Lengkap Pendaftaran<br/>PAB Riska 2018 Batch 2
+                  </a>
 
-<!-- Callout -->
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Callout -->
 <section class="callout">
   <div class="container text-center">
     <h2 class="mx-auto mb-5" style="margin-bottom: 10px !important;">R.I.S.K.A</h2>
