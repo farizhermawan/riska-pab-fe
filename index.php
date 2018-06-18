@@ -141,6 +141,7 @@
     <div class="row" style="margin-bottom: -70px">
       <div class="col-sm-12">
         <br/>
+          <a href="../portal/" class="btn btn-warning btn-lg">Daftar Sekarang</a>
         <br/>
         <br/>
         <a href="assets/file/Alur Pendaftaran PAB RISKA 2018 Batch 2.pdf" class="btn btn-lg btn-success">
