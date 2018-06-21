@@ -48,7 +48,16 @@ $(function() {
   console.log(secondsLeft);
   window.seconds = Math.floor(secondsLeft);
 
-  startCountdown();
+  if(targetDate > now) {
+    startCountdown();
+  } else {
+    // untuk biar ga minus di default 00
+    displayValue('#js-days', 00);
+    displayValue('#js-hours', 00);
+    displayValue('#js-minutes', 00);
+    displayValue('#js-seconds', 00);
+  }
+
 });
 
 var interval;
@@ -127,8 +136,8 @@ function startCountdown() {
       console.log('menit => '+ window.minutes);
       console.log('detik => '+ window.seconds);
 
-      if(window.days == 0 && window.hours == 0
-        && window.minutes == 0 && window.seconds == 0) {
+      if((window.days == 0 && window.hours == 0
+        && window.minutes == 0 && window.seconds == 0)) {
         console.log('berenti ya');
         clearInterval(interval);
       }

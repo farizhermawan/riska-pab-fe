@@ -40,7 +40,7 @@
       <a class="js-scroll-trigger" href="#page-top">Home</a>
     </li>
     <li class="sidebar-nav-item">
-      <a class="js-scroll-trigger" href="#about">Information</a>
+      <a class="js-scroll-trigger" href="#about">Registration & Information</a>
     </li>
     <li class="sidebar-nav-item">
       <a class="js-scroll-trigger" href="#contact">Contact Us</a>
@@ -80,7 +80,7 @@
               <strong>Cinematografi</strong>
             </h6>-->
           <span class="service-icon rounded-circle mx-auto mb-3 text-quota" style="font-size: 15px;">
-           <strong>Cinematografi</strong>
+           <a href="http://bit.ly/Cinematografi2018"><strong>Cinematografi</strong></a>
          </span>
 
           <p class="text-faded mb-0"></p>
@@ -92,7 +92,7 @@
               <strong>SDIS</strong>
             </h6>-->
             <span class="service-icon rounded-circle mx-auto mb-3 text-quota" style="font-size: 15px;">
-           <strong>SDIS</strong>
+           <a href="http://bit.ly/SDIS2018"><strong>SDIS</strong></a>
          </span>
             <p class="text-faded mb-0"></p>
           </div>
@@ -103,7 +103,7 @@
                 <strong>SDTNI</strong>
               </h6>-->
               <span class="service-icon rounded-circle mx-auto mb-3 text-quota" style="font-size: 15px;">
-           <strong>SDTNI</strong>
+           <a href="http://bit.ly/SDTNI2018"><strong>SDTNI</strong></a>
          </span>
               <p class="text-faded mb-0"></p>
             </div>
@@ -114,7 +114,7 @@
                   <strong>BMAQ</strong>
                 </h6>-->
                 <span class="service-icon rounded-circle mx-auto mb-3 text-quota" style="font-size: 15px;">
-           <strong>BMAQ</strong>
+           <a href="http://bit.ly/BMAQ2018"><strong>BMAQ</strong></a>
          </span>
                 <p class="text-faded mb-0"></p>
               </div>
@@ -125,7 +125,7 @@
                     <strong>Sister Club</strong>
                   </h6>-->
                   <span class="service-icon rounded-circle mx-auto mb-3 text-quota" style="font-size: 15px;">
-           <strong>Sister Club</strong>
+           <a href="http://bit.ly/SisterClub2018"><strong>Sister Club</strong></a>
          </span>
                   <p class="text-faded mb-0"></p>
                 </div>
@@ -136,7 +136,7 @@
                     <strong>Tifan Po Khan</strong>
                   </h6>-->
                     <span class="service-icon rounded-circle mx-auto mb-3 text-quota" style="font-size: 15px;">
-           <strong>Tifan Po Khan</strong>
+           <a href="http://bit.ly/Thifan2018"><strong>Thifan PoKhan</strong></a>
          </span>
                   <p class="text-faded mb-0"></p>
                 </div>
@@ -147,49 +147,58 @@
                     <strong>Volaris</strong>
                   </h6>-->
                     <span class="service-icon rounded-circle mx-auto mb-3 text-quota" style="font-size: 15px;">
-           <strong>Volaris</strong>
+           <a href="http://bit.ly/Volaris2018"><strong>Volaris</strong></a>
          </span>
                   <p class="text-faded mb-0"></p>
                 </div>
 
                 <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
                  <span class="service-icon rounded-circle mx-auto mb-3 text-white bg-danger" style="font-size: 20px;">
-                   <strong>22/07/2018</strong>
+                   <strong>09/08/2018</strong>
                  </span>
                   <h6 class="text-white">
-                    PENDAFTARAN DIMULAI
+                    PENDAFTARAN DITUTUP
                   </h6>
                 </div>
               </div>
               <div class="row" style="margin-bottom: -70px">
                 <div class="col-sm-12">
                   <br/>
-                    <!-- <a href="../portal/" class="btn btn-warning btn-lg">Daftar Sekarang</a> -->
+                    <a href="../portal/" class="btn btn-warning btn-lg">Daftar Sekarang</a>
                   <br/>
                   <br/>
-                  <a href="https://bit.ly/2JVzuqJ" class="btn btn-lg btn-success">
-                    Info Lengkap Pendaftaran<br/>PAB Riska 2018 Batch 2
-                  </a>
+                    <a href="https://bit.ly/2JVzuqJ" download="File PDF" style="color: #FFD700;">
+                        Download : Info Lengkap Pendaftaran PAB Riska 2018 Batch 2
+                    </a>
 
                 </div>
               </div>
             </div>
           </section>
 
-<!-- Portfolio
+<!-- Timer -->
 <section class="wrapper">
-    <section id="countdown-container" class="countdown-container">
-        <article id="js-countdown" class="countdown">
-            <section id="js-days" class="number"></section>
-            <section id="js-separator" class="separator">:</section>
-            <section id="js-hours" class="number"></section>
-            <section id="js-separator" class="separator">:</section>
-            <section id="js-minutes" class="number"></section>
-            <section id="js-separator" class="separator">:</section>
-            <section id="js-seconds" class="number"></section>
-        </article>
-    </section>
-</section>-->
+  <div class="container">
+    <div class="row">
+        <div class="col-lg-3"></div>
+          <div class="col-lg-6">
+            <section id="countdown-container" class="countdown-container">
+                <article id="js-countdown" class="countdown">
+                      <section id="js-days" class="number"></section>
+                      <section id="js-separator" class="separator">:</section>
+                      <section id="js-hours" class="number"></section>
+                      <section id="js-separator" class="separator">:</section>
+                      <section id="js-minutes" class="number"></section>
+                      <section id="js-separator" class="separator">:</section>
+                      <section id="js-seconds" class="number"></section>
+                </article>
+            </section>
+          </div>
+        <div class="col-lg-3"></div>
+      </div>
+    </div>
+  </div>
+</section>
 
           <!-- Callout -->
 <section class="callout">
