@@ -369,10 +369,10 @@
 <script src="vendor/blueimp/js/blueimp-gallery.min.js"></script>
 
 <!-- Custom scripts for this template -->
-<script src="assets/js/app.js"></script>
+<script src="assets/js/app.js?v=<?=time()?>"></script>
 
 <!-- countdown   -->
-<script src="assets/js/countdown.js"></script>
+<script src="assets/js/countdown.js?v=<?=time()?>"></script>
 </body>
 
 </html>
