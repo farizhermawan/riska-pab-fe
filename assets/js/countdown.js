@@ -33,11 +33,8 @@
 $(function() {
   // taun, bulan 0-11, tanggal 0-30, jam 0-23, menit 0-59, second 0-59, milliseconds
   // jam 00 = 17
-  var targetDate  = new Date(Date.UTC(2018, 07, 08, 0, 0));
+  var targetDate  = new Date(1533833999000);
   var now   = new Date();
-
-  console.log('date skrg => ' + now);
-  console.log('date countdown => ' + targetDate);
 
   window.days = daysBetween(now, targetDate);
   var secondsLeft = secondsDifference(now, targetDate);
@@ -45,17 +42,17 @@ $(function() {
   secondsLeft = secondsLeft - (window.hours * 60 * 60);
   window.minutes = Math.floor(secondsLeft / 60 );
   secondsLeft = secondsLeft - (window.minutes * 60);
-  console.log(secondsLeft);
+  // console.log(secondsLeft);
   window.seconds = Math.floor(secondsLeft);
 
   if(targetDate > now) {
     startCountdown();
   } else {
     // untuk biar ga minus di default 00
-    displayValue('#js-days', 00);
-    displayValue('#js-hours', 00);
-    displayValue('#js-minutes', 00);
-    displayValue('#js-seconds', 00);
+    displayValue('#js-days', '00');
+    displayValue('#js-hours', '00');
+    displayValue('#js-minutes', '00');
+    displayValue('#js-seconds', '00');
   }
 
 });
@@ -131,14 +128,14 @@ function startCountdown() {
           }
       }
 
-      console.log('hari => '+ window.days);
-      console.log('jam => '+ window.hours);
-      console.log('menit => '+ window.minutes);
-      console.log('detik => '+ window.seconds);
+      // console.log('hari => '+ window.days);
+      // console.log('jam => '+ window.hours);
+      // console.log('menit => '+ window.minutes);
+      // console.log('detik => '+ window.seconds);
 
       if((window.days == 0 && window.hours == 0
         && window.minutes == 0 && window.seconds == 0)) {
-        console.log('berenti ya');
+        // console.log('berenti ya');
         clearInterval(interval);
       }
   }, 1000);
