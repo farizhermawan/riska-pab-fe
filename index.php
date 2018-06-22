@@ -310,9 +310,9 @@
         <h7>
           <strong>CINEMATOGRAFI</strong>
         </h7>
-        <p class="text-faded mb-0">Ikhwan
-          <a href="https://api.whatsapp.com/send?phone=6289621185746" style="color: #FFD700;">(0896 2118 5746)</a>
-          <br> Akhwat <a href="https://api.whatsapp.com/send?phone=6281280643108" style="color: #FFD700;">(0812 8064
+        <p class="text-faded mb-0">
+          <a href="https://api.whatsapp.com/send?phone=6285774042691" style="color: #FFD700;">(0857 7404 2691)</a>
+          <br> <a href="https://api.whatsapp.com/send?phone=6281280643108" style="color: #FFD700;">(0812 8064
             3108)</a></p>
 
       </div>
