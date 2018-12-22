@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>PAB RISKA 2018 Batch 2</title>
+  <title>PAB RISKA 2019 Batch 1</title>
 
   <!-- Bootstrap Core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -22,7 +22,7 @@
 
   <!-- Custom CSS -->
   <link href="assets/css/stylish-portfolio.min.css" rel="stylesheet">
-    <link href="assets/css/countdown.css" rel="stylesheet">
+  <link href="assets/css/countdown.css" rel="stylesheet">
 
 </head>
 
@@ -34,7 +34,7 @@
 <nav id="sidebar-wrapper">
   <ul class="sidebar-nav">
     <li class="sidebar-brand">
-      <a class="js-scroll-trigger" href="#page-top">PAB RISKA 2018</a>
+      <a class="js-scroll-trigger" href="#page-top">PAB RISKA 2019</a>
     </li>
     <li class="sidebar-nav-item">
       <a class="js-scroll-trigger" href="#page-top">Home</a>
@@ -71,136 +71,135 @@
   <div class="container">
     <div class="content-section-heading">
       <h5 class="text-secondary mb-0">DEPARTEMEN AT RISKAMENTENG</h5>
-      <h3 class="mb-5">PAB RISKA 2018 Batch 2</h3>
+      <h3 class="mb-5">PAB RISKA 2019 Batch 1</h3>
     </div>
     <div class="row">
       <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-          <!--<span class="service-icon rounded-circle mx-auto mb-3 text-quota">30</span>
-            <h6>
-              <strong>Cinematografi</strong>
-            </h6>-->
-          <span class="service-icon rounded-circle mx-auto mb-3 text-quota" style="font-size: 15px;">
+        <!--<span class="service-icon rounded-circle mx-auto mb-3 text-quota">30</span>
+          <h6>
+            <strong>Cinematografi</strong>
+          </h6>-->
+        <span class="service-icon rounded-circle mx-auto mb-3 text-quota" style="font-size: 15px;">
            <a href="http://bit.ly/Cinematografi2018"><strong>Cinematografi</strong></a>
          </span>
 
-          <p class="text-faded mb-0"></p>
-        </div>
+        <p class="text-faded mb-0"></p>
+      </div>
 
-        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-            <!--<span class="service-icon rounded-circle mx-auto mb-3 text-quota">30</span>
-            <h6>
-              <strong>SDIS</strong>
-            </h6>-->
-            <span class="service-icon rounded-circle mx-auto mb-3 text-quota" style="font-size: 15px;">
+      <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+        <!--<span class="service-icon rounded-circle mx-auto mb-3 text-quota">30</span>
+        <h6>
+          <strong>SDIS</strong>
+        </h6>-->
+        <span class="service-icon rounded-circle mx-auto mb-3 text-quota" style="font-size: 15px;">
            <a href="http://bit.ly/SDIS2018"><strong>SDIS</strong></a>
          </span>
-            <p class="text-faded mb-0"></p>
-          </div>
+        <p class="text-faded mb-0"></p>
+      </div>
 
-          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-              <!--<span class="service-icon rounded-circle mx-auto mb-3 text-quota">30</span>
-              <h6>
-                <strong>SDTNI</strong>
-              </h6>-->
-              <span class="service-icon rounded-circle mx-auto mb-3 text-quota" style="font-size: 15px;">
+      <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+        <!--<span class="service-icon rounded-circle mx-auto mb-3 text-quota">30</span>
+        <h6>
+          <strong>SDTNI</strong>
+        </h6>-->
+        <span class="service-icon rounded-circle mx-auto mb-3 text-quota" style="font-size: 15px;">
            <a href="http://bit.ly/SDTNI2018"><strong>SDTNI</strong></a>
          </span>
-              <p class="text-faded mb-0"></p>
-            </div>
+        <p class="text-faded mb-0"></p>
+      </div>
 
-            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                <!--<span class="service-icon rounded-circle mx-auto mb-3 text-quota">30</span>
-                <h6>
-                  <strong>BMAQ</strong>
-                </h6>-->
-                <span class="service-icon rounded-circle mx-auto mb-3 text-quota" style="font-size: 15px;">
+      <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+        <!--<span class="service-icon rounded-circle mx-auto mb-3 text-quota">30</span>
+        <h6>
+          <strong>BMAQ</strong>
+        </h6>-->
+        <span class="service-icon rounded-circle mx-auto mb-3 text-quota" style="font-size: 15px;">
            <a href="http://bit.ly/BMAQ2018"><strong>BMAQ</strong></a>
          </span>
-                <p class="text-faded mb-0"></p>
-              </div>
+        <p class="text-faded mb-0"></p>
+      </div>
 
-              <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                  <!--<span class="service-icon rounded-circle mx-auto mb-3 text-quota">30</span>
-                  <h6>
-                    <strong>Sister Club</strong>
-                  </h6>-->
-                  <span class="service-icon rounded-circle mx-auto mb-3 text-quota" style="font-size: 15px;">
+      <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+        <!--<span class="service-icon rounded-circle mx-auto mb-3 text-quota">30</span>
+        <h6>
+          <strong>Sister Club</strong>
+        </h6>-->
+        <span class="service-icon rounded-circle mx-auto mb-3 text-quota" style="font-size: 15px;">
            <a href="http://bit.ly/SisterClub2018"><strong>Sister Club</strong></a>
          </span>
-                  <p class="text-faded mb-0"></p>
-                </div>
+        <p class="text-faded mb-0"></p>
+      </div>
 
-                <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                  <!--<span class="service-icon rounded-circle mx-auto mb-3 text-quota">30</span>
-                  <h6>
-                    <strong>Tifan Po Khan</strong>
-                  </h6>-->
-                    <span class="service-icon rounded-circle mx-auto mb-3 text-quota" style="font-size: 15px;">
+      <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+        <!--<span class="service-icon rounded-circle mx-auto mb-3 text-quota">30</span>
+        <h6>
+          <strong>Tifan Po Khan</strong>
+        </h6>-->
+        <span class="service-icon rounded-circle mx-auto mb-3 text-quota" style="font-size: 15px;">
            <a href="http://bit.ly/Thifan2018"><strong>Thifan PoKhan</strong></a>
          </span>
-                  <p class="text-faded mb-0"></p>
-                </div>
+        <p class="text-faded mb-0"></p>
+      </div>
 
-                <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                  <!--<span class="service-icon rounded-circle mx-auto mb-3 text-quota">30</span>
-                  <h6>
-                    <strong>Volaris</strong>
-                  </h6>-->
-                    <span class="service-icon rounded-circle mx-auto mb-3 text-quota" style="font-size: 15px;">
+      <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+        <!--<span class="service-icon rounded-circle mx-auto mb-3 text-quota">30</span>
+        <h6>
+          <strong>Volaris</strong>
+        </h6>-->
+        <span class="service-icon rounded-circle mx-auto mb-3 text-quota" style="font-size: 15px;">
            <a href="http://bit.ly/Volaris2018"><strong>Volaris</strong></a>
          </span>
-                  <p class="text-faded mb-0"></p>
-                </div>
+        <p class="text-faded mb-0"></p>
+      </div>
 
-                <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+      <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
                  <span class="service-icon rounded-circle mx-auto mb-3 text-white bg-danger" style="font-size: 20px;">
-                   <strong>09/08/2018</strong>
+                   <strong>25/01/2019</strong>
                  </span>
-                  <h6 class="text-white">
-                    PENDAFTARAN DITUTUP
-                  </h6>
-                </div>
-              </div>
-              <div class="row" style="margin-bottom: -70px">
-                <div class="col-sm-12">
-                  <br/>
-                    <a href="../portal/" class="btn btn-warning btn-lg">Daftar Sekarang</a>
-                  <br/>
-                  <br/>
-                    <a href="https://bit.ly/2JVzuqJ" download="File PDF" style="color: #FFD700;">
-                        Download : Info Lengkap Pendaftaran PAB Riska 2018 Batch 2
-                    </a>
-
-                </div>
-              </div>
-            </div>
-          </section>
-
-<!-- Timer -->
-<section class="wrapper">
-  <div class="container">
-    <div class="row">
-        <div class="col-lg-3"></div>
-          <div class="col-lg-6">
-            <section id="countdown-container" class="countdown-container">
-                <article id="js-countdown" class="countdown">
-                      <section id="js-days" class="number"></section>
-                      <section id="js-separator" class="separator">:</section>
-                      <section id="js-hours" class="number"></section>
-                      <section id="js-separator" class="separator">:</section>
-                      <section id="js-minutes" class="number"></section>
-                      <section id="js-separator" class="separator">:</section>
-                      <section id="js-seconds" class="number"></section>
-                </article>
-            </section>
-          </div>
-        <div class="col-lg-3"></div>
+        <h6 class="text-white">
+          PENDAFTARAN DIBUKA
+        </h6>
+      </div>
+    </div>
+    <div class="row" style="margin-bottom: -70px">
+      <div class="col-sm-12">
+        <br/>
+        <a href="../portal/" class="btn btn-warning btn-lg">Daftar Sekarang</a>
+        <br/>
+        <br/>
+        <a href="https://bit.ly/2JVzuqJ" download="File PDF" style="color: #FFD700;">
+          Download : Info Lengkap Pendaftaran PAB Riska 2019 Batch 1
+        </a>
       </div>
     </div>
   </div>
 </section>
 
-          <!-- Callout -->
+<!-- Timer -->
+<section class="wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3"></div>
+      <div class="col-lg-6">
+        <section id="countdown-container" class="countdown-container">
+          <article id="js-countdown" class="countdown">
+            <section id="js-days" class="number"></section>
+            <section id="js-separator" class="separator">:</section>
+            <section id="js-hours" class="number"></section>
+            <section id="js-separator" class="separator">:</section>
+            <section id="js-minutes" class="number"></section>
+            <section id="js-separator" class="separator">:</section>
+            <section id="js-seconds" class="number"></section>
+          </article>
+        </section>
+      </div>
+      <div class="col-lg-3"></div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- Callout -->
 <section class="callout">
   <div class="container text-center">
     <h2 class="mx-auto mb-5" style="margin-bottom: 10px !important;">R.I.S.K.A</h2>
@@ -216,107 +215,91 @@
     </div>
     <div class="row">
       <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-screen-smartphone"></i>
-          </span>
+        <span class="service-icon rounded-circle mx-auto mb-3">
+          <i class="icon-screen-smartphone"></i>
+        </span>
         <h7>
           <strong>SDTNI</strong>
         </h7>
-        <p class="text-faded mb-0">Ikhwan
-          <a href="https://api.whatsapp.com/send?phone=6285725156130" style="color: #FFD700;">(0857 2515 6130)</a>
-          <br> Akhwat <a href="https://api.whatsapp.com/send?phone=6281287984293" style="color: #FFD700;">(0812 8798
-            4293)</a><br></br></p>
+        <p class="text-faded mb-0">
+          Hasyim <a href="https://api.whatsapp.com/send?phone=628972982724" style="color: #FFD700;">(+62
+            897-2982-724)</a><br/>
+          Putri S. <a href="https://api.whatsapp.com/send?phone=6289652748810" style="color: #FFD700;">(+62
+            896-5274-8810)</a><br/>
+        </p>
       </div>
 
       <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-screen-smartphone"></i>
-          </span>
+        <span class="service-icon rounded-circle mx-auto mb-3">
+          <i class="icon-screen-smartphone"></i>
+        </span>
         <h7>
           <strong>BMAQ</strong>
         </h7>
-        <p class="text-faded mb-0">Ikhwan
-          <a href="https://api.whatsapp.com/send?phone=6281295387555" style="color: #FFD700;">(0812 9538 7555)</a>
-          <br> Akhwat <a href="https://api.whatsapp.com/send?phone=6281717118407" style="color: #FFD700;">(0817 1711
-            8407)</a></p>
-
+        <p class="text-faded mb-0">
+          Bahri <a href="https://api.whatsapp.com/send?phone=6281932365553" style="color: #FFD700;">(+62
+            819-3236-5553)</a><br/>
+          Imel <a href="https://api.whatsapp.com/send?phone=6282220427072" style="color: #FFD700;">(+62
+            822-2042-7072)</a>
+        </p>
       </div>
 
       <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-screen-smartphone"></i>
-          </span>
-
+        <span class="service-icon rounded-circle mx-auto mb-3">
+          <i class="icon-screen-smartphone"></i>
+        </span>
         <h7>
           <strong>SISTER CLUB</strong>
         </h7>
         <p class="text-faded mb-0">
-          <a href="https://api.whatsapp.com/send?phone=6281285222827" style="color: #FFD700;">(0812 8522 2827)</a>
-          <br> <a href="https://api.whatsapp.com/send?phone=6285768117111" style="color: #FFD700;">(0857 6811 7111)</a>
+          Erfina <a href="https://api.whatsapp.com/send?phone=6285335050050" style="color: #FFD700;">(+62
+            853-3505-0050)</a><br/>
+          Sarah <a href="https://api.whatsapp.com/send?phone=628568712059" style="color: #FFD700;">(+62 856
+            8712-059)</a>
         </p>
-
       </div>
 
       <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-screen-smartphone"></i>
-          </span>
-
+        <span class="service-icon rounded-circle mx-auto mb-3">
+          <i class="icon-screen-smartphone"></i>
+        </span>
         <h7>
           <strong>SDIS</strong>
         </h7>
         <p class="text-faded mb-0">
-          <a href="https://api.whatsapp.com/send?phone=6287887897779" style="color: #FFD700;">(0878 8789 7779)</a>
-          <br> <a href="https://api.whatsapp.com/send?phone=6282115015985" style="color: #FFD700;">(0821 1501 5985)</a>
+          Fildzah <a href="https://api.whatsapp.com/send?phone=6287887897779" style="color: #FFD700;">(+62
+            878-8789-7779)</a><br/>
+          Rara <a href="https://api.whatsapp.com/send?phone=6287887571175" style="color: #FFD700;">(+62
+            878-8757-1175)</a>
         </p>
-
       </div>
 
       <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-screen-smartphone"></i>
-          </span>
-
-        <h7>
-          <strong>TIFAN PO KHAN</strong>
-        </h7>
-        <p class="text-faded mb-0">Ikhwan
-          <a href="https://api.whatsapp.com/send?phone=6281228095118" style="color: #FFD700;">(0812 2809 5118)</a>
-          <br> Akhwat <a href="https://api.whatsapp.com/send?phone=6285776243861" style="color: #FFD700;">(0857 7624
-            3861)</a></p>
-
-      </div>
-
-      <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-screen-smartphone"></i>
-          </span>
-
+        <span class="service-icon rounded-circle mx-auto mb-3">
+          <i class="icon-screen-smartphone"></i>
+        </span>
         <h7>
           <strong>VOLARIS</strong>
         </h7>
         <p class="text-faded mb-0">
-          <a href="https://api.whatsapp.com/send?phone=6285772770576" style="color: #FFD700;">(0857 7277 0576)</a>
-          <br> <a href="https://api.whatsapp.com/send?phone=6285273883501" style="color: #FFD700;">(0852 7388 3501)</a>
+          Abdu <a href="https://api.whatsapp.com/send?phone=6285273883501" style="color: #FFD700;">(+62
+            852-7388-3501)</a>
         </p>
-
       </div>
 
       <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-screen-smartphone"></i>
-          </span>
-
+        <span class="service-icon rounded-circle mx-auto mb-3">
+          <i class="icon-screen-smartphone"></i>
+        </span>
         <h7>
           <strong>CINEMATOGRAFI</strong>
         </h7>
         <p class="text-faded mb-0">
-          <a href="https://api.whatsapp.com/send?phone=6285774042691" style="color: #FFD700;">(0857 7404 2691)</a>
-          <br> <a href="https://api.whatsapp.com/send?phone=6281280643108" style="color: #FFD700;">(0812 8064
-            3108)</a></p>
-
+          Amalia <a href="https://api.whatsapp.com/send?phone=6285774042691" style="color: #FFD700;">(+62
+            857-7404-2691)</a><br/>
+          Putri D. <a href="https://api.whatsapp.com/send?phone=6287770007917" style="color: #FFD700;">(+62
+            877-7000-7917)</a></p>
       </div>
-
 
     </div>
   </div>
@@ -369,21 +352,25 @@
 <script src="vendor/blueimp/js/blueimp-gallery.min.js"></script>
 
 <!-- Custom scripts for this template -->
-<script src="assets/js/app.js?v=<?=time()?>"></script>
+<script src="assets/js/app.js?v=<?= time() ?>"></script>
 
 <!-- countdown   -->
-<script src="assets/js/countdown.js?v=<?=time()?>"></script>
+<script src="assets/js/countdown.js?v=<?= time() ?>"></script>
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131294893-1"></script>
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    window.dataLayer = window.dataLayer || [];
 
-  ga('create', 'UA-91326781-1', 'auto');
-  ga('send', 'pageview');
+    function gtag() {
+        dataLayer.push(arguments);
+    }
 
+    gtag('js', new Date());
+
+    gtag('config', 'UA-131294893-1');
 </script>
+
 </body>
 
 </html>
