@@ -85,7 +85,7 @@ var gallery = blueimp.Gallery([
 $.getJSON( "/portal/api/batch/current/status", function( data ) {
   $.each( data.programs, function( key, val ) {
     var quota = val.quota;
-    var used = val.counter_ikhwan + counter_akhwat;
+    var used = val.counter_ikhwan + val.counter_akhwat;
     $("#list-dept").append('<div class="col-lg-3 col-md-6 mb-5 mb-lg-0">' +
       '        <span class="service-icon rounded-circle mx-auto mb-3 text-quota">' + (quota - used) + '</span>' +
       '        <h6><strong>' + val.name + '</strong></h6>' +

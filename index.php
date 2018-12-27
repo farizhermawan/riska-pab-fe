@@ -70,7 +70,7 @@
 <section class="content-section bg-primary text-white text-center" id="about" style="padding-top: 10px">
   <div class="container">
     <div class="content-section-heading">
-      <h5 class="text-secondary mb-0">DEPARTEMEN AT RISKAMENTENG</h5>
+      <h5 class="text-secondary mb-0">SISA QUOTA PENDAFTARAN</h5>
       <h3 class="mb-5">PAB RISKA 2019 Batch 1</h3>
     </div>
     <div class="row" id="list-dept">
@@ -78,9 +78,7 @@
         <span class="service-icon rounded-circle mx-auto mb-3 text-white bg-danger" style="font-size: 20px;">
           <strong>25/01/2019</strong>
         </span>
-        <h6 class="text-white">
-          PENDAFTARAN DIBUKA
-        </h6>
+        <h6 class="text-white">PENDAFTARAN DIBUKA</h6>
       </div>
     </div>
     <div class="row" style="margin-bottom: -70px">
