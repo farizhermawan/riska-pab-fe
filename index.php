@@ -133,17 +133,6 @@
       <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
         <!--<span class="service-icon rounded-circle mx-auto mb-3 text-quota">30</span>
         <h6>
-          <strong>Tifan Po Khan</strong>
-        </h6>-->
-        <span class="service-icon rounded-circle mx-auto mb-3 text-quota" style="font-size: 15px;">
-           <a href="http://bit.ly/Thifan2018"><strong>Thifan PoKhan</strong></a>
-         </span>
-        <p class="text-faded mb-0"></p>
-      </div>
-
-      <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-        <!--<span class="service-icon rounded-circle mx-auto mb-3 text-quota">30</span>
-        <h6>
           <strong>Volaris</strong>
         </h6>-->
         <span class="service-icon rounded-circle mx-auto mb-3 text-quota" style="font-size: 15px;">
