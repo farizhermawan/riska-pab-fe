@@ -33,7 +33,7 @@
 $(function() {
   // taun, bulan 0-11, tanggal 0-30, jam 0-23, menit 0-59, second 0-59, milliseconds
   // jam 00 = 17
-  var targetDate  = new Date(1533833999000);
+  var targetDate  = new Date(1548435599000);
   var now   = new Date();
 
   window.days = daysBetween(now, targetDate);

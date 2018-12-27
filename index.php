@@ -73,78 +73,11 @@
       <h5 class="text-secondary mb-0">DEPARTEMEN AT RISKAMENTENG</h5>
       <h3 class="mb-5">PAB RISKA 2019 Batch 1</h3>
     </div>
-    <div class="row">
+    <div class="row" id="list-dept">
       <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-        <!--<span class="service-icon rounded-circle mx-auto mb-3 text-quota">30</span>
-          <h6>
-            <strong>Cinematografi</strong>
-          </h6>-->
-        <span class="service-icon rounded-circle mx-auto mb-3 text-quota" style="font-size: 15px;">
-           <a href="http://bit.ly/Cinematografi2018"><strong>Cinematografi</strong></a>
-         </span>
-
-        <p class="text-faded mb-0"></p>
-      </div>
-
-      <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-        <!--<span class="service-icon rounded-circle mx-auto mb-3 text-quota">30</span>
-        <h6>
-          <strong>SDIS</strong>
-        </h6>-->
-        <span class="service-icon rounded-circle mx-auto mb-3 text-quota" style="font-size: 15px;">
-           <a href="http://bit.ly/SDIS2018"><strong>SDIS</strong></a>
-         </span>
-        <p class="text-faded mb-0"></p>
-      </div>
-
-      <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-        <!--<span class="service-icon rounded-circle mx-auto mb-3 text-quota">30</span>
-        <h6>
-          <strong>SDTNI</strong>
-        </h6>-->
-        <span class="service-icon rounded-circle mx-auto mb-3 text-quota" style="font-size: 15px;">
-           <a href="http://bit.ly/SDTNI2018"><strong>SDTNI</strong></a>
-         </span>
-        <p class="text-faded mb-0"></p>
-      </div>
-
-      <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-        <!--<span class="service-icon rounded-circle mx-auto mb-3 text-quota">30</span>
-        <h6>
-          <strong>BMAQ</strong>
-        </h6>-->
-        <span class="service-icon rounded-circle mx-auto mb-3 text-quota" style="font-size: 15px;">
-           <a href="http://bit.ly/BMAQ2018"><strong>BMAQ</strong></a>
-         </span>
-        <p class="text-faded mb-0"></p>
-      </div>
-
-      <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-        <!--<span class="service-icon rounded-circle mx-auto mb-3 text-quota">30</span>
-        <h6>
-          <strong>Sister Club</strong>
-        </h6>-->
-        <span class="service-icon rounded-circle mx-auto mb-3 text-quota" style="font-size: 15px;">
-           <a href="http://bit.ly/SisterClub2018"><strong>Sister Club</strong></a>
-         </span>
-        <p class="text-faded mb-0"></p>
-      </div>
-
-      <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-        <!--<span class="service-icon rounded-circle mx-auto mb-3 text-quota">30</span>
-        <h6>
-          <strong>Volaris</strong>
-        </h6>-->
-        <span class="service-icon rounded-circle mx-auto mb-3 text-quota" style="font-size: 15px;">
-           <a href="http://bit.ly/Volaris2018"><strong>Volaris</strong></a>
-         </span>
-        <p class="text-faded mb-0"></p>
-      </div>
-
-      <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                 <span class="service-icon rounded-circle mx-auto mb-3 text-white bg-danger" style="font-size: 20px;">
-                   <strong>25/01/2019</strong>
-                 </span>
+        <span class="service-icon rounded-circle mx-auto mb-3 text-white bg-danger" style="font-size: 20px;">
+          <strong>25/01/2019</strong>
+        </span>
         <h6 class="text-white">
           PENDAFTARAN DIBUKA
         </h6>
