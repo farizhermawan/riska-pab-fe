@@ -152,7 +152,7 @@
           <i class="icon-screen-smartphone"></i>
         </span>
         <h7>
-          <strong>BMAQ</strong>
+          <strong>BMAQ</strong><p>(Kuota Akhwat HABIS!)</p>
         </h7>
         <p class="text-faded mb-0">
           Bahri <a href="https://api.whatsapp.com/send?phone=6281932365553" style="color: #FFD700;">(+62 819-3236-5553)</a><br/>
