@@ -70,7 +70,7 @@
 <section class="content-section bg-primary text-white text-center" id="about" style="padding-top: 10px">
   <div class="container">
     <div class="content-section-heading">
-      <h5 class="text-secondary mb-0">SISA QUOTA PENDAFTARAN</h5>
+      <h5 class="text-secondary mb-0">PENDAFTARAN DI TUTUP</h5>
       <h3 class="mb-5">PAB RISKA 2019 Batch 1</h3>
     </div>
     <div class="row" id="list-dept">
