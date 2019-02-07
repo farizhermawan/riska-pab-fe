@@ -81,7 +81,7 @@
         <h6 class="text-white">PENDAFTARAN DIBUKA</h6>
       </div>
     </div>
-    <div class="row" style="margin-bottom: -70px">
+    <div class="row" style="margin-bottom: -70px; display:none">
       <div class="col-sm-12">
         <br/>
         <a href="../portal/" class="btn btn-warning btn-lg">Daftar Sekarang</a>
