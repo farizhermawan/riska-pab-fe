@@ -56,7 +56,7 @@
 
 <!-- Slider -->
 <div id="blueimp-gallery-carousel" class="blueimp-gallery blueimp-gallery-carousel bg-primary text-white text-center"
-     style="margin:0; box-shadow: none">
+     style="margin:0; box-shadow: none; display: none;">
   <div class="slides"></div>
   <h3 class="title"></h3>
   <a class="prev">‹</a>
@@ -70,7 +70,7 @@
 <section class="content-section bg-primary text-white text-center" id="about" style="padding-top: 10px">
   <div class="container">
     <div class="content-section-heading">
-      <h5 class="text-secondary mb-0">PENDAFTARAN DI TUTUP</h5>
+      <h5 class="text-secondary mb-0">SISA KUOTA PENDAFTARAN</h5>
       <h3 class="mb-5">PAB RISKA 2019 Batch 2</h3>
     </div>
     <div class="row" id="list-dept">
