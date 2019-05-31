@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>PAB RISKA 2019 Batch 1</title>
+  <title>PAB RISKA 2019 Batch 2</title>
 
   <!-- Bootstrap Core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -71,24 +71,24 @@
   <div class="container">
     <div class="content-section-heading">
       <h5 class="text-secondary mb-0">PENDAFTARAN DI TUTUP</h5>
-      <h3 class="mb-5">PAB RISKA 2019 Batch 1</h3>
+      <h3 class="mb-5">PAB RISKA 2019 Batch 2</h3>
     </div>
     <div class="row" id="list-dept">
       <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
         <span class="service-icon rounded-circle mx-auto mb-3 text-white bg-danger" style="font-size: 20px;">
-          <strong>25/01/2019</strong>
+          <strong>01/06/2019</strong>
         </span>
         <h6 class="text-white">PENDAFTARAN DIBUKA</h6>
       </div>
     </div>
-    <div class="row" style="margin-bottom: -70px; display:none">
+    <div class="row" style="margin-bottom: -70px; display:block">
       <div class="col-sm-12">
         <br/>
         <a href="../portal/" class="btn btn-warning btn-lg">Daftar Sekarang</a>
         <br/>
         <br/>
         <a href="https://bit.ly/2JVzuqJ" download="File PDF" style="color: #FFD700;">
-          Download : Info Lengkap Pendaftaran PAB Riska 2019 Batch 1
+          Download : Info Lengkap Pendaftaran PAB Riska 2019 Batch 2
         </a>
       </div>
     </div>
@@ -153,7 +153,6 @@
         </span>
         <h7>
           <strong>BMAQ</strong>
-          <!-- <p>(Kuota Akhwat HABIS!)</p> -->
         </h7>
         <p class="text-faded mb-0">
           Bahri <a href="https://api.whatsapp.com/send?phone=6281932365553" style="color: #FFD700;">(+62 819-3236-5553)</a><br/>
