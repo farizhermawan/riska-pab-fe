@@ -56,7 +56,7 @@
 
 <!-- Slider -->
 <div id="blueimp-gallery-carousel" class="blueimp-gallery blueimp-gallery-carousel bg-primary text-white text-center"
-     style="margin:0; box-shadow: none; display: none;">
+     style="margin:0; box-shadow: none; display: block;">
   <div class="slides"></div>
   <h3 class="title"></h3>
   <a class="prev">‹</a>
