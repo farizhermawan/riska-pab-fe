@@ -1,0 +1,11 @@
+<section class="sidebar">
+    <ul class="sidebar-menu" ng-if="$ctrl.$rootScope.isRegistered()">
+        <li class="header">MENU</li>
+        <li ng-class="{active: ('department' | includedByState)}" class="treeview">
+            <a href="#"><i class="fa fa-link"></i> <span>Master Data</span> <i class="fa fa-angle-left pull-right"></i></a>
+            <ul class="treeview-menu">
+                <li ng-class="{active: ('department' | includedByState)}"><a ui-sref="department">Departemen</a></li>
+            </ul>
+        </li>
+    </ul>
+</section>
