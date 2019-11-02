@@ -6,10 +6,14 @@ function config(locationProvider, stateProvider, urlRouterProvider) {
     url: '/',
     template: '<dashboard></dashboard>'
   })
-    .state('department', {
-      url: '/departments',
-      template: '<department></department>'
-    });
+  .state('department', {
+    url: '/departments',
+    template: '<department></department>'
+  })
+  .state('auth-callback', {
+    url: '/auth/callback',
+    template: '<auth-callback></auth-callback>'
+  });
 }
 
 config.$inject = ['$locationProvider', '$stateProvider', '$urlRouterProvider'];

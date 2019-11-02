@@ -1,7 +1,29 @@
 export default class MainSidebarComponent {
 
-  constructor(private $rootScope) {
+  protected user;
+
+  constructor(private $rootScope, private SweetAlert, private authService) {
   }
+
+  $onInit() {
+    this.user = this.$rootScope.user;
+  }
+
+  logout() {
+    let _this = this;
+    _this.SweetAlert.swal({
+      title: "Ingin keluar dari aplikasi?",
+      type: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#DD6B55",
+      confirmButtonText: "Ya",
+      cancelButtonText: "Batal",
+    }, function (confirm) {
+      if (confirm) {
+        _this.authService.logout();
+      }
+    });
+  };
 
   static Factory() {
     return {
@@ -11,4 +33,4 @@ export default class MainSidebarComponent {
   }
 }
 
-MainSidebarComponent.$inject = ['$rootScope'];
+MainSidebarComponent.$inject = ['$rootScope', 'SweetAlert', 'authService'];

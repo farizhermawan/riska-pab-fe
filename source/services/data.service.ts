@@ -1,7 +1,7 @@
 import Constant from "../classes/constant";
 
 export default class DataService {
-  static API_URL = Constant.DATA_SERVICE_URL;
+  static API_URL = Constant.SERVICE_BASE_URL;
 
   constructor(private http) {
   }

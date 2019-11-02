@@ -1,10 +1,9 @@
 import AppComponent from './components/app.component';
 import HeaderComponent from './components/header.component';
 import MainSidebarComponent from './components/main-sidebar.component';
-// pages
 import DashboardComponent from './components/dashboard.component';
-import CallbackComponent from "./components/callback.component";
 import DepartmentComponent from "./components/master_data/department.component";
+import CallbackComponent from "./components/auth/callback.component";
 
 // module
 let mod = angular.module('components', []);
@@ -16,6 +15,6 @@ mod.component('mainSidebar', MainSidebarComponent.Factory());
 mod.component('dashboard', DashboardComponent.Factory());
 mod.component('department', DepartmentComponent.Factory());
 // other
-mod.component('loginCallback', CallbackComponent.Factory());
+mod.component('authCallback', CallbackComponent.Factory());
 
 export default mod;

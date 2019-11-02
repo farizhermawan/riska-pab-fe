@@ -1,50 +1,58 @@
+import Constant from "../classes/constant";
+
 export default class AuthService {
+  static API_URL = Constant.SERVICE_BASE_URL;
 
-  constructor(private lock) {
+  constructor(private $http, private $location, private $localStorage, private $q) {
   }
 
-  listenForAuth(callback) {
+  callbackAuth(onError) {
     let _this = this;
-    this.lock.interceptHash();
-    this.lock.on('authenticated', function (authResult) {
-      _this.callbackAfterAuth(callback, authResult);
-    });
-  }
+    this.$http.get(AuthService.API_URL + '/auth/callback', {params: this.$location.search()}).then(function (response) {
 
-  callbackAfterAuth(callback, authResult) {
-    var parsedAuthResult = {
-      accessToken: authResult.accessToken,
-      idToken: authResult.idToken,
-      idTokenPayload: authResult.idTokenPayload,
-      expiresIn: authResult.expiresIn
-    };
-    this.setSettion(parsedAuthResult);
-    callback(parsedAuthResult);
+      _this.setupHttpHeaderWithToken(response.data.access_token);
+
+      let getProfile = _this.$http.get(AuthService.API_URL + '/auth/me');
+
+      _this.$q.all([getProfile]).then(result => {
+        if (!Array.isArray(result)) onError();
+        else {
+          _this.$localStorage.currentUser = {
+            profile: result[0].data,
+            permission: [], // TODO api to list permission
+            token: response.data.access_token
+          };
+          window.location.href = '/';
+        }
+      });
+    }, onError);
   }
 
   login() {
-    this.lock.show()
+    if (!this.$localStorage.fromLoginScreen) {
+      this.$localStorage.fromLoginScreen = true;
+      window.location.href = '/login.html';
+    }
+    else {
+      this.$localStorage.fromLoginScreen = false;
+      window.location.href = AuthService.API_URL + '/auth/login';
+    }
   }
 
   logout() {
-    localStorage.removeItem('access_token');
-    localStorage.removeItem('id_token');
-    localStorage.removeItem('expires_at');
+    this.$localStorage.$reset();
+    this.$http.defaults.headers.common.Authorization = "";
     this.login();
   }
 
-  isAuthenticated() {
-    let expiresAt = JSON.parse(localStorage.getItem('expires_at'));
-    return new Date().getTime() < expiresAt;
+  checkForAuthentication() {
+    if (!this.$localStorage.currentUser) this.login();
+    else this.setupHttpHeaderWithToken(this.$localStorage.currentUser.token);
   }
 
-  setSettion(authResult) {
-    let expiresAt = JSON.stringify((authResult.expiresIn * 1000) + new Date().getTime());
-    localStorage.setItem('access_token', authResult.accessToken);
-    localStorage.setItem('id_token', authResult.idToken);
-    localStorage.setItem('expires_at', expiresAt);
+  setupHttpHeaderWithToken(token) {
+    this.$http.defaults.headers.common.Authorization = 'Bearer ' + token;
   }
-
 }
 
-AuthService.$inject = ['lock'];
+AuthService.$inject = ['$http', '$location', '$localStorage', '$q'];

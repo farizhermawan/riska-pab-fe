@@ -9,7 +9,6 @@
   ],
   "dependencies": {
     "angular-ui-clock": "^0.7.0",
-    "angular-lock": "^3.0.1",
     "angular-typeahead": "^1.0.2"
   }
 }

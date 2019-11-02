@@ -13,7 +13,8 @@ let app = angular.module('angular-admin-lte', [
   'moment-picker',
   'ngSanitize',
   'ngCookies',
-  'angularjs-input-file'
+  'angularjs-input-file',
+  'ngStorage'
 ]);
 
 app.config(config);

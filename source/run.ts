@@ -1,37 +1,11 @@
-function run(SweetAlert, $rootScope, $state, $timeout, $location, $cookies) {
+function run($rootScope, $localStorage, $location, authService) {
 
-  $rootScope.user = {
-    id: null,
-    auth0_id: null,
-    name: 'fariz.hermawan@traveloka.com',
-    remember_token: null,
-    role: ""
-  };
-
-  $rootScope.isLoggedIn = function () {
-    return $rootScope.user.role != 'not connected';
-  };
-
-  $rootScope.isRegistered = function () {
-    return $rootScope.isLoggedIn() && $rootScope.user.role != 'unknown';
-  };
-
-  $rootScope.logout = function () {
-    SweetAlert.swal({
-      title: "Ingin keluar dari aplikasi?",
-      type: "warning",
-      showCancelButton: true,
-      confirmButtonColor: "#DD6B55",
-      confirmButtonText: "Ya",
-      cancelButtonText: "Batal",
-    }, function (confirm) {
-      if (confirm) {
-        window.close();
-      }
-    });
-  };
+  if ($location.path() != '/auth/callback') {
+    authService.checkForAuthentication();
+    $rootScope.user = $localStorage.currentUser.profile;
+  }
 }
 
-run.$inject = ['SweetAlert', '$rootScope', '$state', '$timeout', '$location', '$cookies'];
+run.$inject = ['$rootScope', '$localStorage', '$location', 'authService'];
 
 export default run;
