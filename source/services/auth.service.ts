@@ -3,7 +3,7 @@ import Constant from "../classes/constant";
 export default class AuthService {
   static API_URL = Constant.SERVICE_BASE_URL;
 
-  constructor(private $http, private $location, private $storage, private $q) {
+  constructor(private $http, private $location, private $q) {
   }
 
   callbackAuth(onError) {
@@ -17,11 +17,12 @@ export default class AuthService {
       _this.$q.all([getProfile]).then(result => {
         if (!Array.isArray(result)) onError();
         else {
-          _this.$storage.currentUser = {
+          let currentUser = {
             profile: result[0].data,
             permission: [], // TODO api to list permission
             token: response.data.access_token
           };
+          _this.setCurrentUser(currentUser);
           window.location.href = '/';
         }
       });
@@ -34,31 +35,39 @@ export default class AuthService {
   }
 
   logout() {
-    this.$storage.$reset();
+    window.localStorage.clear();
     this.$http.defaults.headers.common.Authorization = "";
     this.login();
   }
 
   checkForAuthentication() {
     if (!this.isLoggedIn()) this.login();
-    else this.setupHttpHeaderWithToken(this.$storage.currentUser.token);
+    else this.setupHttpHeaderWithToken(this.getUserToken());
   }
 
   isLoggedIn() {
-    return typeof this.$storage.currentUser !== 'undefined';
+    return typeof this.getCurrentUser() !== 'undefined';
   }
 
   getUserProfile() {
-    return this.isLoggedIn() ? this.$storage.currentUser.profile : null;
+    return this.isLoggedIn() ? this.getCurrentUser().profile : null;
   }
 
   getUserToken() {
-    return this.isLoggedIn() ? this.$storage.currentUser.token : null;
+    return this.isLoggedIn() ? this.getCurrentUser().token : null;
   }
 
   setupHttpHeaderWithToken(token) {
     this.$http.defaults.headers.common.Authorization = 'Bearer ' + token;
   }
+
+  setCurrentUser(data) {
+    window.localStorage.setItem("currentUser", JSON.stringify(data));
+  }
+
+  getCurrentUser() {
+    return JSON.parse(window.localStorage.getItem("currentUser"));
+  }
 }
 
-AuthService.$inject = ['$http', '$location', '$sessionStorage', '$q'];
+AuthService.$inject = ['$http', '$location', '$q'];
