@@ -1,11 +1,11 @@
-function run($rootScope, $localStorage, $location, authService) {
+function run($rootScope, $location, authService) {
 
   if ($location.path() != '/auth/callback') {
     authService.checkForAuthentication();
-    $rootScope.user = $localStorage.currentUser.profile;
+    $rootScope.user = authService.currentUser().profile;
   }
 }
 
-run.$inject = ['$rootScope', '$localStorage', '$location', 'authService'];
+run.$inject = ['$rootScope', '$location', 'authService'];
 
 export default run;

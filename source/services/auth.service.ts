@@ -3,7 +3,7 @@ import Constant from "../classes/constant";
 export default class AuthService {
   static API_URL = Constant.SERVICE_BASE_URL;
 
-  constructor(private $http, private $location, private $localStorage, private $q) {
+  constructor(private $http, private $location, private $storage, private $q) {
   }
 
   callbackAuth(onError) {
@@ -17,7 +17,7 @@ export default class AuthService {
       _this.$q.all([getProfile]).then(result => {
         if (!Array.isArray(result)) onError();
         else {
-          _this.$localStorage.currentUser = {
+          _this.$storage.currentUser = {
             profile: result[0].data,
             permission: [], // TODO api to list permission
             token: response.data.access_token
@@ -34,14 +34,18 @@ export default class AuthService {
   }
 
   logout() {
-    this.$localStorage.$reset();
+    this.$storage.$reset();
     this.$http.defaults.headers.common.Authorization = "";
     this.login();
   }
 
   checkForAuthentication() {
-    if (!this.$localStorage.currentUser) this.login();
-    else this.setupHttpHeaderWithToken(this.$localStorage.currentUser.token);
+    if (!this.$storage.currentUser) this.login();
+    else this.setupHttpHeaderWithToken(this.$storage.currentUser.token);
+  }
+
+  currentUser() {
+    return this.$storage.currentUser;
   }
 
   setupHttpHeaderWithToken(token) {
@@ -49,4 +53,4 @@ export default class AuthService {
   }
 }
 
-AuthService.$inject = ['$http', '$location', '$localStorage', '$q'];
+AuthService.$inject = ['$http', '$location', '$sessionStorage', '$q'];
