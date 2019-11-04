@@ -40,12 +40,20 @@ export default class AuthService {
   }
 
   checkForAuthentication() {
-    if (!this.$storage.currentUser) this.login();
+    if (!this.isLoggedIn()) this.login();
     else this.setupHttpHeaderWithToken(this.$storage.currentUser.token);
   }
 
-  currentUser() {
-    return this.$storage.currentUser;
+  isLoggedIn() {
+    return typeof this.$storage.currentUser !== 'undefined';
+  }
+
+  getUserProfile() {
+    return this.isLoggedIn() ? this.$storage.currentUser.profile : null;
+  }
+
+  getUserToken() {
+    return this.isLoggedIn() ? this.$storage.currentUser.token : null;
   }
 
   setupHttpHeaderWithToken(token) {

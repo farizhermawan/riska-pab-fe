@@ -2,7 +2,7 @@ function run($rootScope, $location, authService) {
 
   if ($location.path() != '/auth/callback') {
     authService.checkForAuthentication();
-    $rootScope.user = authService.currentUser().profile;
+    $rootScope.user = authService.getUserProfile();
   }
 }
 
