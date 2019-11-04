@@ -29,14 +29,8 @@ export default class AuthService {
   }
 
   login() {
-    if (!this.$localStorage.fromLoginScreen) {
-      this.$localStorage.fromLoginScreen = true;
-      window.location.href = '/login.html';
-    }
-    else {
-      this.$localStorage.fromLoginScreen = false;
-      window.location.href = AuthService.API_URL + '/auth/login';
-    }
+    let ref = this.$location.search()['ref'];
+    window.location.href = ref == "login" ? AuthService.API_URL + '/auth/login' : '/login.html';
   }
 
   logout() {
