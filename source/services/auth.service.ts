@@ -46,7 +46,7 @@ export default class AuthService {
   }
 
   isLoggedIn() {
-    return typeof this.getCurrentUser() !== 'undefined';
+    return this.getCurrentUser() !== null;
   }
 
   getUserProfile() {
