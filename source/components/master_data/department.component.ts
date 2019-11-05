@@ -1,4 +1,3 @@
-import angular = require("angular");
 import DefaultPage from "../../classes/default-page";
 
 export default class DepartmentComponent extends DefaultPage {

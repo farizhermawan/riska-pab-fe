@@ -1,4 +1,3 @@
-import angular = require("angular");
 import components from './components';
 import directives from './directives';
 import services from './services';
