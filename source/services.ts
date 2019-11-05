@@ -1,3 +1,4 @@
+import angular = require("angular");
 import DataService from "./services/data.service";
 import AuthService from "./services/auth.service";
 

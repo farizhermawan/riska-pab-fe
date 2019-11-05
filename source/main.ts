@@ -1,3 +1,4 @@
+import angular = require("angular");
 import components from './components';
 import directives from './directives';
 import services from './services';
@@ -9,7 +10,6 @@ let app = angular.module('angular-admin-lte', [
   'oi.select',
   'ngInputCurrency',
   'oitozero.ngSweetAlert',
-  'ds.clock',
   'moment-picker',
   'ngSanitize',
   'ngCookies',

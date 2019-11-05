@@ -1,3 +1,5 @@
+import angular = require("angular");
+
 export default class DefaultPage {
 
   protected list;

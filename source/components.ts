@@ -1,3 +1,4 @@
+import angular = require("angular");
 import AppComponent from './components/app.component';
 import HeaderComponent from './components/header.component';
 import MainSidebarComponent from './components/main-sidebar.component';
