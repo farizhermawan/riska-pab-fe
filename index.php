@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>PAB RISKA 2019 Batch 2</title>
+  <title>PAB RISKA 2020 Batch 1</title>
 
   <!-- Bootstrap Core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -34,7 +34,7 @@
 <nav id="sidebar-wrapper">
   <ul class="sidebar-nav">
     <li class="sidebar-brand">
-      <a class="js-scroll-trigger" href="#page-top">PAB RISKA 2019</a>
+      <a class="js-scroll-trigger" href="#page-top">PAB RISKA 2020</a>
     </li>
     <li class="sidebar-nav-item">
       <a class="js-scroll-trigger" href="#page-top">Home</a>
@@ -71,7 +71,7 @@
   <div class="container">
     <div class="content-section-heading">
       <h5 class="text-secondary mb-0">SISA KUOTA PENDAFTARAN</h5>
-      <h3 class="mb-5">PAB RISKA 2019 Batch 2</h3>
+      <h3 class="mb-5">PAB RISKA 2020 Batch 1</h3>
     </div>
     <div class="row" id="list-dept">
       <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
@@ -88,7 +88,7 @@
         <br/>
         <br/>
         <a href="https://bit.ly/2JVzuqJ" download="File PDF" style="color: #FFD700;">
-          Download : Info Lengkap Pendaftaran PAB Riska 2019 Batch 2
+          Download : Info Lengkap Pendaftaran PAB Riska 2020 Batch 1
         </a>
       </div>
     </div>
