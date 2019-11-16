@@ -141,8 +141,8 @@
           <strong>SDTNI</strong>
         </h6>
         <p class="text-faded mb-0">
-          Ade <a href="https://api.whatsapp.com/send?phone=6281316427607" style="color: #FFD700;">(+62 813-1642-7607)</a><br/>
-          Shaza <a href="https://api.whatsapp.com/send?phone=6285717680116" style="color: #FFD700;">(+62 857-1768-0116)</a><br/>
+          Ikhwan <a href="https://api.whatsapp.com/send?phone=6281281783828" style="color: #FFD700;">(+62 812-8178-3828)</a><br/>
+          Akhwat <a href="https://api.whatsapp.com/send?phone=628986952067" style="color: #FFD700;">(+62 898-695-2067)</a><br/>
         </p>
       </div>
 
@@ -154,8 +154,8 @@
           <strong>BMAQ</strong>
         </h6>
         <p class="text-faded mb-0">
-          Dwiki H <a href="https://api.whatsapp.com/send?phone=6283849799996" style="color: #FFD700;">(+62 838-4979-9996)</a><br/>
-          Ifa <a href="https://api.whatsapp.com/send?phone=6285727311638" style="color: #FFD700;">(+62 857-2731-1638)</a>
+          Ikhwan <a href="https://api.whatsapp.com/send?phone=6285813197595" style="color: #FFD700;">(+62 858-1319-7595)</a><br/>
+          Akhwat <a href="https://api.whatsapp.com/send?phone=6281294494381" style="color: #FFD700;">(+62 812-9449-4381)</a>
         </p>
       </div>
 
@@ -167,8 +167,8 @@
           <strong>SISTER CLUB</strong>
         </h6>
         <p class="text-faded mb-0">
-          Hana <a href="https://api.whatsapp.com/send?phone=6285211872480" style="color: #FFD700;">(+62 852-1187-2480)</a><br/>
-          Chasanda <a href="https://api.whatsapp.com/send?phone=6285710900840" style="color: #FFD700;">(+62 857-1090-0840)</a>
+          Akhwat 1 <a href="https://api.whatsapp.com/send?phone=6281287686922" style="color: #FFD700;">(+62 812-8768-6922)</a><br/>
+          Akhwat 2 <a href="https://api.whatsapp.com/send?phone=6283872311008" style="color: #FFD700;">(+62 838-7231-1008)</a>
         </p>
       </div>
 
@@ -180,8 +180,8 @@
           <strong>SDIS</strong>
         </h6>
         <p class="text-faded mb-0">
-          Fildzah <a href="https://api.whatsapp.com/send?phone=6287887897779" style="color: #FFD700;">(+62 878-8789-7779)</a><br/>
-          Putri S <a href="https://api.whatsapp.com/send?phone=6289652748810" style="color: #FFD700;">(+62 896-5274-8810)</a>
+          Ikhwan <a href="https://api.whatsapp.com/send?phone=6285694395246" style="color: #FFD700;">(+62 856-9439-5246)</a><br/>
+          Akhwat <a href="https://api.whatsapp.com/send?phone=6281317560510" style="color: #FFD700;">(+62 813-1756-0510)</a>
         </p>
       </div>
 
@@ -193,8 +193,8 @@
           <strong>VOLARIS</strong>
         </h6>
         <p class="text-faded mb-0">
-          Trah <a href="https://api.whatsapp.com/send?phone=6283890147722" style="color: #FFD700;">(+62 838-9014-7722)</a><br/>
-          Istias Eka <a href="https://api.whatsapp.com/send?phone=6285711829081⁩" style="color: #FFD700;">(+62 857-1182-9081⁩)</a>
+          Ikhwan <a href="https://api.whatsapp.com/send?phone=6285245081315" style="color: #FFD700;">(+62 852-4508-1315)</a><br/>
+          Akhwat <a href="https://api.whatsapp.com/send?phone=6281380610092" style="color: #FFD700;">(+62 813-8061-0092)</a>
         </p>
       </div>
 
@@ -206,8 +206,8 @@
           <strong>CINEMATOGRAFI</strong>
         </h6>
         <p class="text-faded mb-0">
-          Eky R <a href="https://api.whatsapp.com/send?phone=6281311669092" style="color: #FFD700;">(+62 813-1166-9092)</a><br/>
-          Ikke <a href="https://api.whatsapp.com/send?phone=6287875130472" style="color: #FFD700;">(+62 878-7513-0472)</a></p>
+          Ikhwan <a href="https://api.whatsapp.com/send?phone=6281321185746" style="color: #FFD700;">(+62 813-2118-5746)</a><br/>
+          Akhwat <a href="https://api.whatsapp.com/send?phone=6285275130472" style="color: #FFD700;">(+62 852-7513-0472)</a></p>
       </div>
 
     </div>
