@@ -72,10 +72,10 @@ var gallery = blueimp.Gallery([
   },
   {
     title: 'RISKA MENTENG',
-    href: 'https://www.youtube.com/watch?v=5rwDPw02bAA',
+    href: 'https://www.youtube.com/watch?v=80hvKzTwFBs',
     type: 'text/html',
-    youtube: '5rwDPw02bAA',
-    poster: 'https://i3.ytimg.com/vi/5rwDPw02bAA/hqdefault.jpg'
+    youtube: '80hvKzTwFBs',
+    poster: 'http://i3.ytimg.com/vi/80hvKzTwFBs/maxresdefault.jpg'
   }
 ], {
   container: '#blueimp-gallery-carousel',
