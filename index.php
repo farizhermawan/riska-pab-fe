@@ -76,7 +76,7 @@
     <div class="row" id="list-dept">
       <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
         <span class="service-icon rounded-circle mx-auto mb-3 text-white bg-danger" style="font-size: 20px;">
-          <strong>01/06/2019</strong>
+          <strong>16/11/2019</strong>
         </span>
         <h6 class="text-white">PENDAFTARAN DIBUKA</h6>
       </div>
@@ -116,7 +116,6 @@
       <div class="col-lg-3"></div>
     </div>
   </div>
-  </div>
 </section>
 
 <!-- Callout -->
@@ -138,9 +137,9 @@
         <span class="service-icon rounded-circle mx-auto mb-3">
           <i class="icon-screen-smartphone"></i>
         </span>
-        <h7>
+        <h6>
           <strong>SDTNI</strong>
-        </h7>
+        </h6>
         <p class="text-faded mb-0">
           Ade <a href="https://api.whatsapp.com/send?phone=6281316427607" style="color: #FFD700;">(+62 813-1642-7607)</a><br/>
           Shaza <a href="https://api.whatsapp.com/send?phone=6285717680116" style="color: #FFD700;">(+62 857-1768-0116)</a><br/>
@@ -151,9 +150,9 @@
         <span class="service-icon rounded-circle mx-auto mb-3">
           <i class="icon-screen-smartphone"></i>
         </span>
-        <h7>
+        <h6>
           <strong>BMAQ</strong>
-        </h7>
+        </h6>
         <p class="text-faded mb-0">
           Dwiki H <a href="https://api.whatsapp.com/send?phone=6283849799996" style="color: #FFD700;">(+62 838-4979-9996)</a><br/>
           Ifa <a href="https://api.whatsapp.com/send?phone=6285727311638" style="color: #FFD700;">(+62 857-2731-1638)</a>
@@ -164,9 +163,9 @@
         <span class="service-icon rounded-circle mx-auto mb-3">
           <i class="icon-screen-smartphone"></i>
         </span>
-        <h7>
+        <h6>
           <strong>SISTER CLUB</strong>
-        </h7>
+        </h6>
         <p class="text-faded mb-0">
           Hana <a href="https://api.whatsapp.com/send?phone=6285211872480" style="color: #FFD700;">(+62 852-1187-2480)</a><br/>
           Chasanda <a href="https://api.whatsapp.com/send?phone=6285710900840" style="color: #FFD700;">(+62 857-1090-0840)</a>
@@ -177,9 +176,9 @@
         <span class="service-icon rounded-circle mx-auto mb-3">
           <i class="icon-screen-smartphone"></i>
         </span>
-        <h7>
+        <h6>
           <strong>SDIS</strong>
-        </h7>
+        </h6>
         <p class="text-faded mb-0">
           Fildzah <a href="https://api.whatsapp.com/send?phone=6287887897779" style="color: #FFD700;">(+62 878-8789-7779)</a><br/>
           Putri S <a href="https://api.whatsapp.com/send?phone=6289652748810" style="color: #FFD700;">(+62 896-5274-8810)</a>
@@ -190,9 +189,9 @@
         <span class="service-icon rounded-circle mx-auto mb-3">
           <i class="icon-screen-smartphone"></i>
         </span>
-        <h7>
+        <h6>
           <strong>VOLARIS</strong>
-        </h7>
+        </h6>
         <p class="text-faded mb-0">
           Trah <a href="https://api.whatsapp.com/send?phone=6283890147722" style="color: #FFD700;">(+62 838-9014-7722)</a><br/>
           Istias Eka <a href="https://api.whatsapp.com/send?phone=6285711829081⁩" style="color: #FFD700;">(+62 857-1182-9081⁩)</a>
@@ -203,9 +202,9 @@
         <span class="service-icon rounded-circle mx-auto mb-3">
           <i class="icon-screen-smartphone"></i>
         </span>
-        <h7>
+        <h6>
           <strong>CINEMATOGRAFI</strong>
-        </h7>
+        </h6>
         <p class="text-faded mb-0">
           Eky R <a href="https://api.whatsapp.com/send?phone=6281311669092" style="color: #FFD700;">(+62 813-1166-9092)</a><br/>
           Ikke <a href="https://api.whatsapp.com/send?phone=6287875130472" style="color: #FFD700;">(+62 878-7513-0472)</a></p>
@@ -271,13 +270,10 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131294893-1"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
-
     function gtag() {
         dataLayer.push(arguments);
     }
-
     gtag('js', new Date());
-
     gtag('config', 'UA-131294893-1');
 </script>
 
