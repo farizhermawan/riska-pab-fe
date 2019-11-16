@@ -84,7 +84,7 @@
     <div class="row" style="margin-bottom: -70px; display:block">
       <div class="col-sm-12">
         <br/>
-        <a href="../portal/" class="btn btn-warning btn-lg">Daftar Sekarang</a>
+        <a href="../portal/#!/signup" class="btn btn-warning btn-lg">Daftar Sekarang</a>
         <br/>
         <br/>
         <a href="https://bit.ly/2JVzuqJ" download="File PDF" style="color: #FFD700;">
