@@ -66,9 +66,9 @@ $('.map').on('click', onMapClickHandler);
 var gallery = blueimp.Gallery([
   {
     title: 'PAB RISKA',
-    href: 'assets/images/pab20191.jpg',
+    href: 'assets/images/pab20201.jpg',
     type: 'image/jpeg',
-    thumbnail: 'images/pab20191.jpg'
+    thumbnail: 'images/pab20201.jpg'
   },
   {
     title: 'RISKA MENTENG',
