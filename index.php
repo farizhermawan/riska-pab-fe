@@ -180,8 +180,8 @@
           <strong>SDIS</strong>
         </h6>
         <p class="text-faded mb-0">
-          Ikhwan <a href="https://api.whatsapp.com/send?phone=6285694395246" style="color: #FFD700;">(+62 856-9439-5246)</a><br/>
-          Akhwat <a href="https://api.whatsapp.com/send?phone=6281317560510" style="color: #FFD700;">(+62 813-1756-0510)</a>
+          Akhwat 1 <a href="https://api.whatsapp.com/send?phone=6285694395246" style="color: #FFD700;">(+62 856-9439-5246)</a><br/>
+          Akhwat 2 <a href="https://api.whatsapp.com/send?phone=6281317560510" style="color: #FFD700;">(+62 813-1756-0510)</a>
         </p>
       </div>
 
@@ -194,7 +194,7 @@
         </h6>
         <p class="text-faded mb-0">
           Ikhwan <a href="https://api.whatsapp.com/send?phone=6285245081315" style="color: #FFD700;">(+62 852-4508-1315)</a><br/>
-          Akhwat <a href="https://api.whatsapp.com/send?phone=6281380610092" style="color: #FFD700;">(+62 813-8061-0092)</a>
+          Akhwat <a href="https://api.whatsapp.com/send?phone=6281380610092" style="color: #FFD700;">(+62 813-8061-0090)</a>
         </p>
       </div>
 
