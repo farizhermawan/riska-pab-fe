@@ -1,0 +1,65 @@
+<section class="content-header">
+  <h1>Role Members</h1>
+</section>
+
+<section class="content">
+  <div class="row">
+    <div class="col-sm-12 col-lg-6">
+      <div class="box box-success" ng-if="$ctrl.view == 'read'">
+        <div class="box-header with-border">
+          <a ui-sref="roles" class="text-black">
+            <i class="fa fa-chevron-left"></i> <h3 class="box-title">{{$ctrl.record.name}}</h3>
+          </a>
+          <div class="box-tools pull-right">
+            <button ng-click="$ctrl.loadRecords()" type="button" class="btn btn-box-tool"><i class="fa fa-refresh"></i></button>
+          </div>
+        </div>
+        <div class="box-body table-responsive">
+          <form ng-submit="$ctrl.saveRecord()">
+            <div class="form-group" ng-class="{'has-error': $ctrl.hasError('email')}">
+              <label>Tambah Pengguna</label>
+              <div class="input-group">
+                <input type="text" class="form-control" autocomplete="off" placeholder="Masukan Email Pengguna" ng-model="$ctrl.params.email">
+                <span class="input-group-btn">
+                <button type="submit" class="btn btn-info btn-flat">Submit</button>
+              </span>
+              </div>
+              <span ng-if="$ctrl.hasError('email')" class="help-block">{{$ctrl.error['email']}}</span>
+            </div>
+          </form>
+          <table class="table table-bordered table-striped">
+            <thead>
+            <tr>
+              <th>Nama Pengguna</th>
+              <th>Alamat Email</th>
+              <th>Berlaku Sampai</th>
+              <th>Status</th>
+              <th style="width: 35px">&nbsp;</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="item in $ctrl.record.users">
+              <td>{{item.fullname}}</td>
+              <td>{{item.email}}</td>
+              <td class="text-center">{{item.pivot.expired_at || '-'}}</td>
+              <td class="text-center">
+                <a ng-click="$ctrl.markAsInactive(item)" ng-if="item.pivot.is_active" class="label label-success">Aktif</a>
+                <a ng-click="$ctrl.markAsActive(item)" ng-if="!item.pivot.is_active" class="label label-danger">Non Aktif</a>
+              </td>
+              <td>
+                <a ng-click="$ctrl.removeRecord(item)" class="btn btn-xs btn-danger"><i class="fa fa-trash-o"></i></a>
+              </td>
+            </tr>
+            <tr ng-if="$ctrl.record.users.length == 0">
+              <td colspan="5" class="text-center">Data Kosong</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="overlay" ng-if="$ctrl.isLoading()">
+          <i class="fa fa-refresh fa-spin"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

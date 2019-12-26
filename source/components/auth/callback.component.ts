@@ -1,12 +1,14 @@
 export default class CallbackComponent {
 
-  constructor(private SweetAlert, private authService) {
+  constructor(private SweetAlert, private auth) {
   }
 
   $onInit() {
     let _this = this;
-    this.authService.callbackAuth(function (response) {
-      console.log(response);
+    this.auth.callbackAuth(function() {
+      window.location.href = '/';
+    }, function (response) {
+      console.error(response);
       _this.SweetAlert.swal({
         title: "Login Gagal",
         text: "Gagal masuk dengan akun google anda",
@@ -14,7 +16,7 @@ export default class CallbackComponent {
         type: "error"
       }, function (confirm) {
         if (confirm) {
-          _this.authService.logout();
+          _this.auth.logout();
         }
       });
     })

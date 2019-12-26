@@ -1,5 +1,8 @@
 export default class AppComponent {
 
+  constructor(private $rootScope) {
+  }
+
   static Factory() {
     return {
       controller: AppComponent,
@@ -7,3 +10,5 @@ export default class AppComponent {
     };
   }
 }
+
+AppComponent.$inject = ['$rootScope'];

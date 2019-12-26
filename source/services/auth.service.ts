@@ -1,32 +1,29 @@
 import Constant from "../classes/constant";
 
 export default class AuthService {
-  static API_URL = Constant.SERVICE_BASE_URL;
+  static API_URL = Constant.SERVICE_BASE_URL + "/v1";
 
   constructor(private $http, private $location, private $q) {
   }
 
-  callbackAuth(onError) {
-    let _this = this;
-    this.$http.get(AuthService.API_URL + '/auth/callback', {params: this.$location.search()}).then(function (response) {
+  callbackAuth(onSuccess, onError) {
+    this.$http.get(AuthService.API_URL + '/auth/callback', {params: this.$location.search()})
+        .then((response) => this.fetchIdentity(response.data.access_token, onSuccess, onError), onError);
+  }
 
-      _this.setupHttpHeaderWithToken(response.data.access_token);
+  fetchIdentity(access_token, onSuccess, onError = null) {
+    this.setupHttpHeaderWithToken(access_token);
 
-      let getProfile = _this.$http.get(AuthService.API_URL + '/auth/me');
-
-      _this.$q.all([getProfile]).then(result => {
-        if (!Array.isArray(result)) onError();
-        else {
+    let getProfile = this.$http.get(AuthService.API_URL + '/auth/me')
+        .then((response) => {
           let currentUser = {
-            profile: result[0].data,
+            profile: response.data,
             permission: [], // TODO api to list permission
-            token: response.data.access_token
+            token: access_token
           };
-          _this.setCurrentUser(currentUser);
-          window.location.href = '/';
-        }
-      });
-    }, onError);
+          this.setCurrentUser(currentUser);
+          onSuccess(currentUser);
+        }, onError);
   }
 
   login() {
@@ -49,8 +46,9 @@ export default class AuthService {
     return this.getCurrentUser() !== null;
   }
 
-  getUserProfile() {
-    return this.isLoggedIn() ? this.getCurrentUser().profile : null;
+  getUserProfile(refetch = false, onSuccess, onError = null) {
+    if (!refetch) onSuccess(this.isLoggedIn() ? this.getCurrentUser().profile : null);
+    else this.fetchIdentity(this.getUserToken(), (result) => onSuccess(result.profile), onError);
   }
 
   getUserToken() {

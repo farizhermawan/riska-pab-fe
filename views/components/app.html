@@ -1,6 +1,6 @@
 <header class="main-header"></header>
 <main-sidebar class="main-sidebar"></main-sidebar>
 <div class="content-wrapper" style="min-height: 861px;">
-    <ui-view></ui-view>
+    <ui-view ng-hide="!$ctrl.$rootScope.user"></ui-view>
 </div>
 <script src="dist/js/app.js"></script>

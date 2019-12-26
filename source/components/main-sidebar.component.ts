@@ -1,12 +1,16 @@
+import UserManagementMenu from "../menus/user-management.menu";
+
 export default class MainSidebarComponent {
 
-  protected user;
+  protected menus;
 
-  constructor(private $rootScope, private SweetAlert, private authService) {
+  constructor(private $rootScope, private $state, private SweetAlert, private auth) {
   }
 
   $onInit() {
-    this.user = this.$rootScope.user;
+    this.menus = [
+      new UserManagementMenu,
+    ];
   }
 
   logout() {
@@ -20,9 +24,21 @@ export default class MainSidebarComponent {
       cancelButtonText: "Batal",
     }, function (confirm) {
       if (confirm) {
-        _this.authService.logout();
+        _this.auth.logout();
       }
     });
+  };
+
+  isMenuActive(menu) {
+    let items = menu.getItems();
+    for(let i=0; i<items.length; i++){
+      if (this.$state.current.name.indexOf(items[i].link) != -1) return true;
+    }
+    return false;
+  };
+
+  isMenuItemActive(menu) {
+    return this.$state.current.name.indexOf(menu.link) != -1;
   };
 
   static Factory() {
@@ -33,4 +49,4 @@ export default class MainSidebarComponent {
   }
 }
 
-MainSidebarComponent.$inject = ['$rootScope', 'SweetAlert', 'authService'];
+MainSidebarComponent.$inject = ['$rootScope', '$state', 'SweetAlert', 'authService'];
