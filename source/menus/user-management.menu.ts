@@ -8,7 +8,7 @@ export default class UserManagementMenu extends Menu {
   }
 
   protected registerMenu() {
-    this.items.push(new MenuItem("Roles", "roles"));
     this.items.push(new MenuItem("Permissions", "permissions"));
+    this.items.push(new MenuItem("Roles", "roles"));
   }
 }
