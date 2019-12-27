@@ -1,5 +1,5 @@
 import CrudPage from "../../classes/crud-page";
-import Util from "../../classes/util";
+import ValidationUtil from "../../classes/validation-util";
 
 export default class RoleMemberComponent extends CrudPage {
 
@@ -38,7 +38,7 @@ export default class RoleMemberComponent extends CrudPage {
 
   protected validationRules() {
     if (this.params.email == null || this.params.email == "") this.addError('email', 'Email tidak boleh kosong');
-    else if (Util.validateEmail(this.params.email) == false) this.addError('email', 'Email tidak valid');
+    else if (ValidationUtil.isEmail(this.params.email) == false) this.addError('email', 'Email tidak valid');
   }
 
   markAsActive (item) {
