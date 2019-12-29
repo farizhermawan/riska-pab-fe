@@ -207,7 +207,7 @@
         </h6>
         <p class="text-faded mb-0">
           Ikhwan <a href="https://api.whatsapp.com/send?phone=6281321185746" style="color: #FFD700;">(+62 813-2118-5746)</a><br/>
-          Akhwat <a href="https://api.whatsapp.com/send?phone=6285275130472" style="color: #FFD700;">(+62 852-7513-0472)</a></p>
+          Akhwat <a href="https://api.whatsapp.com/send?phone=6287875130472" style="color: #FFD700;">(+62 878-7513-0472)</a></p>
       </div>
 
     </div>
