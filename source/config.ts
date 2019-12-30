@@ -8,7 +8,8 @@ function config(locationProvider, stateProvider, urlRouterProvider) {
     .state('roles', {url: '/roles', template: '<role></role>'})
     .state('role-members', {url: '/roles/:roleId/members', template: '<role-member></role-member>'})
     .state('permissions', {url: '/permissions', template: '<permission></permission>'})
-    // Auth
+    .state('role-permissions', {url: '/roles/:roleId/permissions', template: '<role-permission></role-permission>'})
+      // Auth
     .state('auth-callback', {url: '/auth/callback', template: '<auth-callback></auth-callback>'});
 }
 
