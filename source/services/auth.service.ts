@@ -17,8 +17,9 @@ export default class AuthService {
     let getProfile = this.$http.get(AuthService.API_URL + '/auth/me')
         .then((response) => {
           let currentUser = {
-            profile: response.data,
-            permission: [], // TODO api to list permission
+            profile: response.data.profile,
+            permissions: response.data.permissions,
+            roles: response.data.roles,
             token: access_token
           };
           this.setCurrentUser(currentUser);
