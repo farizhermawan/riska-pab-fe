@@ -48,8 +48,8 @@ export default class AuthService {
   }
 
   getUserProfile(refetch = false, onSuccess, onError = null) {
-    if (!refetch) onSuccess(this.isLoggedIn() ? this.getCurrentUser().profile : null);
-    else this.fetchIdentity(this.getUserToken(), (result) => onSuccess(result.profile), onError);
+    if (!refetch) onSuccess(this.isLoggedIn() ? this.getCurrentUser() : null);
+    else this.fetchIdentity(this.getUserToken(), (result) => onSuccess(result), onError);
   }
 
   getUserToken() {

@@ -16,4 +16,8 @@ export default class Menu {
   getItems() {
     return this.items;
   }
+
+  getRequiredPermission() {
+    return '';
+  }
 }

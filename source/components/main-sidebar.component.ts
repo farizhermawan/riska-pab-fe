@@ -41,6 +41,10 @@ export default class MainSidebarComponent {
     return this.$state.current.name.indexOf(menu.link) != -1;
   };
 
+  canAccess(menu) {
+    return menu.getRequiredPermission() == "" ? true : this.$rootScope.permissions.indexOf(menu.getRequiredPermission()) != -1;
+  }
+
   static Factory() {
     return {
       controller: MainSidebarComponent,

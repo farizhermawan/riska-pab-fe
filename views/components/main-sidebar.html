@@ -10,7 +10,7 @@
     </div>
     <ul class="sidebar-menu" ng-if="$ctrl.$rootScope.user">
         <li class="header">MENU</li>
-        <li ng-repeat="menu in $ctrl.menus" class="treeview" ng-class="{active: $ctrl.isMenuActive(menu)}">
+        <li ng-repeat="menu in $ctrl.menus" ng-hide="!$ctrl.canAccess(menu)" class="treeview" ng-class="{active: $ctrl.isMenuActive(menu)}">
             <a href="#"><i class="fa fa-link"></i> <span>{{menu.getTitle()}}</span> <i class="fa fa-angle-left pull-right"></i></a>
             <ul ng-repeat="item in menu.getItems()" class="treeview-menu">
                 <li ng-class="{active: $ctrl.isMenuItemActive(item)}"><a ui-sref="{{item.getLink()}}">{{item.getTitle()}}</a></li>

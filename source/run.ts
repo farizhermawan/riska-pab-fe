@@ -1,16 +1,40 @@
-function run($rootScope, $location, $timeout, auth) {
+function run($rootScope, $state, $location, $timeout, $q, auth) {
 
-  if ($location.path() != '/auth/callback') {
-    auth.checkForAuthentication();
-    auth.getUserProfile(true, function(profile) {
-      $rootScope.user = profile
-    }, function (response) {
-      if (response.status == 401) auth.logout();
-      else console.error(response);
+  let checkPermission = function(permission) {
+    console.log(permission, typeof permission !== 'undefined', $rootScope.permissions.indexOf(permission));
+    if(typeof permission !== 'undefined' && $rootScope.permissions.indexOf(permission) == -1) {
+      $state.go('default');
+    }
+  };
+
+  let afterLoadSession = function(user) {
+    $rootScope.user = user.profile;
+    $rootScope.permissions = user.permissions;
+    $rootScope.roles = user.roles;
+
+    if(typeof $state.current.needPermission !== 'undefined' && $rootScope.permissions.indexOf($state.current.needPermission) == -1) {
+      $state.go('default');
+    }
+
+    $rootScope.$on('$stateChangeStart', function (ev, to, toParams, from, fromParams) {
+      if(typeof to.needPermission !== 'undefined' && $rootScope.permissions.indexOf(to.needPermission) == -1) {
+        ev.preventDefault();
+      }
     });
-  }
+  };
+
+  $timeout(500).then(function() {
+    if ($location.path() != '/auth/callback') {
+      auth.checkForAuthentication();
+
+      auth.getUserProfile(true, afterLoadSession, function (response) {
+        if (response.status == 401) auth.logout();
+        else console.error(response);
+      });
+    }
+  });
 }
 
-run.$inject = ['$rootScope', '$location', '$timeout', 'authService'];
+run.$inject = ['$rootScope', '$state', '$location', '$timeout', '$q', 'authService'];
 
 export default run;
