@@ -31,6 +31,8 @@ function run($rootScope, $state, $location, $timeout, $q, auth) {
         if (response.status == 401) auth.logout();
         else console.error(response);
       });
+    } else {
+      $rootScope.isCallback = true;
     }
   });
 }
