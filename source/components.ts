@@ -8,8 +8,6 @@ import RoleMemberComponent from "./components/user_management/role-member.compon
 import PermissionComponent from "./components/user_management/permission.component";
 import RolePermissionComponent from "./components/user_management/role-permission.component";
 
-import angular = require("angular");
-
 // module
 let mod = angular.module('components', []);
 

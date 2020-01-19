@@ -1,7 +1,5 @@
 import DefaultPage from "./default-page";
 
-import angular = require("angular");
-
 export default class CrudPage extends DefaultPage {
 
   protected record;
