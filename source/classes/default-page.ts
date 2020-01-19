@@ -31,7 +31,7 @@ export default class DefaultPage {
   }
 
   protected isLoading() {
-    return this.loading == true;
+    return this.loadingState == true;
   }
 
   protected confirmMessage(title, text, onConfirm, onCancel = this.doNothing) {
@@ -62,6 +62,6 @@ export default class DefaultPage {
     this.alert.swal(title, message, "info");
   }
 
-  private doNothing() {
+  protected doNothing() {
   }
 }

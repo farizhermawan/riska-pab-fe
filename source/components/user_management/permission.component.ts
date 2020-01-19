@@ -25,7 +25,7 @@ export default class PermissionComponent extends CrudPage {
     this.addError('name', response.data.error);
   };
 
-  private validationRules() {
+  protected validationRules() {
     if (this.params.name == null || this.params.name == "") this.addError('name', 'Kode permission tidak boleh kosong');
     else if (ValidationUtil.containSpecialChar(this.params.name.replace(/:/g, ""))) this.addError('name', 'Kode permission tidak boleh mengandung spasi dan special character kecuali titik dua');
     if (this.params.description == null || this.params.description == "") this.addError('description', 'Deskripsi permission tidak boleh kosong');

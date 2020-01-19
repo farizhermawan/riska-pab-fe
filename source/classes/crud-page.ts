@@ -1,5 +1,7 @@
 import DefaultPage from "./default-page";
 
+import angular = require("angular");
+
 export default class CrudPage extends DefaultPage {
 
   protected record;
@@ -117,8 +119,5 @@ export default class CrudPage extends DefaultPage {
 
   protected confirmRemove(onConfirm, onCancel = this.doNothing) {
     this.confirmMessage("Hapus Data", "Data yang sudah dihapus tidak bisa dikembalikan!", onConfirm, onCancel);
-  }
-
-  private doNothing() {
   }
 }

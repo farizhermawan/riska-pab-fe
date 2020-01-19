@@ -20,7 +20,7 @@ export default class RoleComponent extends CrudPage {
     this.loadRecords();
   }
 
-  private validationRules() {
+  protected validationRules() {
     if (this.params.name == null || this.params.name == "") this.addError('name', 'Nama role tidak boleh kosong');
     if (this.params.description == null || this.params.description == "") this.addError('description', 'Deskripsi role tidak boleh kosong');
   }

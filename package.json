@@ -8,6 +8,7 @@
     "url": "https://github.com/farizhermawan/riska-data-fe.git"
   },
   "scripts": {
+    "build": "webpack --mode=development --optimize-minimize",
     "start": "npm run lite",
     "lite": "lite-server"
   },
@@ -29,12 +30,20 @@
     "ngstorage": "^0.3.11",
     "oi.select": "^0.2.21",
     "sweetalert": "^1.0.0",
-    "systemjs": "^0.19.31",
-    "typescript": "^1.8.10"
+    "systemjs": "^0.19.31"
   },
   "devDependencies": {
     "@types/angular": "^1.6.56",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
     "lite-server": "^2.2.2",
-    "systemjs-builder": "^0.15.23"
+    "ng-annotate-loader": "^0.6.1",
+    "rimraf": "^3.0.0",
+    "systemjs-builder": "^0.15.23",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.5",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
   }
 }

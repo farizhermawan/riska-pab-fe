@@ -7,17 +7,17 @@ export default class Menu {
     this.registerMenu();
   }
 
-  getTitle() {
+  protected getTitle() {
     return "";
   }
 
   protected registerMenu() {}
 
-  getItems() {
+  protected getItems() {
     return this.items;
   }
 
-  getRequiredPermission() {
+  protected getRequiredPermission() {
     return '';
   }
 }

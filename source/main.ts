@@ -4,6 +4,8 @@ import services from './services';
 import config from './config';
 import run from "./run";
 
+import angular = require("angular");
+
 let app = angular.module('angular-admin-lte', [
   'ui.router',
   'oi.select',
