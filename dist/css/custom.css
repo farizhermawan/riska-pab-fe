@@ -38,21 +38,21 @@ input.as-label {
 
 }
 
-.sidebar-form oi-select.custom .btn {
+.sidebar-form oi-select .btn {
     height: unset;
 }
 
-oi-select.custom .select-search:focus-within {
+oi-select .select-search:focus-within {
     background-color: #fff;
     color: #666;
 }
 
-oi-select.custom .select-dropdown {
+oi-select .select-dropdown {
     width: 208px;
     position: unset;
 }
 
-oi-select.custom .select-search {
+oi-select .select-search {
     background-color: #374850;
     border: 1px solid transparent;
     -webkit-transition: all .3s ease-in-out;
@@ -60,7 +60,7 @@ oi-select.custom .select-search {
     transition: all .3s ease-in-out;
 }
 
-oi-select.custom .select-search:after {
+oi-select .select-search:after {
     border: none !important;
 }
 

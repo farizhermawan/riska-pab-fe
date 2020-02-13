@@ -3,9 +3,10 @@ import ValidationUtil from "../../classes/validation-util";
 
 export default class RoleMemberComponent extends CrudPage {
 
-  private roleId;
+  private readonly roleId;
+  private user;
 
-  constructor(private apiService, alert, $stateParams) {
+  constructor(private apiService, private $q, alert, $stateParams) {
     super(
       {},
       {alert: alert}
@@ -15,24 +16,29 @@ export default class RoleMemberComponent extends CrudPage {
 
   $onInit() {
     this.api = {
+      index: () => this.apiService.get("/roles/" + this.roleId + "/users"),
       show: () => this.apiService.get("/roles/" + this.roleId),
       store: (params) => this.apiService.post("/roles/" + this.roleId + "/users", params),
       update: (userId, params) => this.apiService.put("/roles/" + this.roleId + "/users/" + userId, params),
-      destroy: (userId) => this.apiService.delete("/roles/" + this.roleId + "/users/" + userId)
+      destroy: (userId) => this.apiService.delete("/roles/" + this.roleId + "/users/" + userId),
+      searchUser: (filter) => this.apiService.get("/users/", filter)
     };
 
     this.loadRecords();
   }
 
-  protected loadRecords() {
-    super.loadRecord(this.roleId);
-  }
+  protected callbackAfterLoadRecords = (resp) => {
+    this.records = resp.data;
+    this.loading(false);
+  };
 
   protected callbackErrorSaveRecord = (response) => {
     this.addError('email', response.data.error);
+    this.loading(false);
   };
 
   protected saveRecord() {
+    this.params.email = this.user == null ? null : this.user.email;
     super.saveRecord(true);
   }
 
@@ -57,6 +63,15 @@ export default class RoleMemberComponent extends CrudPage {
     });
   }
 
+  searchUser(query, querySelectAs) {
+    if (query == null || query.length < 2) return;
+    let deferred = this.$q.defer();
+    this.api.searchUser({email: query}).then((resp) => {
+      deferred.resolve(resp.data.data);
+    });
+    return deferred.promise;
+  };
+
   static Factory() {
     return {
       controller: RoleMemberComponent,
@@ -65,4 +80,4 @@ export default class RoleMemberComponent extends CrudPage {
   }
 }
 
-RoleMemberComponent.$inject = ['apiService', 'SweetAlert', '$stateParams'];
+RoleMemberComponent.$inject = ['apiService', '$q', 'SweetAlert', '$stateParams'];

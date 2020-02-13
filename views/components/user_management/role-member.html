@@ -19,7 +19,7 @@
             <div class="form-group" ng-class="{'has-error': $ctrl.hasError('email')}">
               <label>Tambah Pengguna</label>
               <div class="input-group">
-                <input type="text" class="form-control" autocomplete="off" placeholder="Masukan Email Pengguna" ng-model="$ctrl.params.email">
+                <oi-select oi-options="item.email for item in $ctrl.searchUser($query)" oi-select-options="{cleanModel: true}" ng-model="$ctrl.user" placeholder="Masukan Email Pengguna"></oi-select>
                 <span class="input-group-btn">
                 <button type="submit" class="btn btn-info btn-flat">Submit</button>
               </span>
@@ -38,7 +38,7 @@
             </tr>
             </thead>
             <tbody>
-            <tr ng-repeat="item in $ctrl.record.users">
+            <tr ng-repeat="item in $ctrl.records">
               <td>{{item.fullname}}</td>
               <td>{{item.email}}</td>
               <td class="text-center">{{item.pivot.expired_at || '-'}}</td>
