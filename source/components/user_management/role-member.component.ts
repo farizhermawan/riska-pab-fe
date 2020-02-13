@@ -21,7 +21,7 @@ export default class RoleMemberComponent extends CrudPage {
       store: (params) => this.apiService.post("/roles/" + this.roleId + "/users", params),
       update: (userId, params) => this.apiService.put("/roles/" + this.roleId + "/users/" + userId, params),
       destroy: (userId) => this.apiService.delete("/roles/" + this.roleId + "/users/" + userId),
-      searchUser: (filter) => this.apiService.get("/users/", filter)
+      search: (query) => this.apiService.get("/users/?email=" + encodeURI(query))
     };
 
     this.loadRecords();
@@ -66,7 +66,7 @@ export default class RoleMemberComponent extends CrudPage {
   searchUser(query, querySelectAs) {
     if (query == null || query.length < 2) return;
     let deferred = this.$q.defer();
-    this.api.searchUser({email: query}).then((resp) => {
+    this.api.search(query).then((resp) => {
       deferred.resolve(resp.data.data);
     });
     return deferred.promise;
