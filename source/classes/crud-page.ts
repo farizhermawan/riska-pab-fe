@@ -46,27 +46,27 @@ export default class CrudPage extends DefaultPage {
   }
 
   protected loadRecord(id, callback = this.callbackAfterLoadRecord) {
-    let _this = this;
-
-    _this.loading();
+    this.loading();
     this.api.show(id).then(callback);
   }
 
   protected loadRecords(callback = this.callbackAfterLoadRecords) {
-    let _this = this;
-
-    _this.loading();
+    this.loading();
     this.api.index().then(callback);
   }
 
   protected saveRecord(withoutConfirm = false) {
     if (!this.validateRecord()) return;
-    this.loading();
     if (withoutConfirm) {
-      (this.params.id == null ? this.api.store(this.params) : this.api.update(this.params.id, this.params)).then(this.callbackAfterSaveRecord, this.callbackErrorSaveRecord);
+      this.doSave().then(this.callbackAfterSaveRecord, this.callbackErrorSaveRecord);
     } else {
-      this.confirmSave(() => (this.params.id == null ? this.api.store(this.params) : this.api.update(this.params.id, this.params)).then(this.callbackAfterSaveRecord, this.callbackErrorSaveRecord));
+      this.confirmSave(() => this.doSave().then(this.callbackAfterSaveRecord, this.callbackErrorSaveRecord));
     }
+  }
+
+  protected doSave() {
+    this.loading();
+    return this.params.id == null ? this.api.store(this.params) : this.api.update(this.params.id, this.params);
   }
 
   protected updateRecord(item) {
