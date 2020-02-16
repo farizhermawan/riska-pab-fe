@@ -34,7 +34,7 @@ export default class PermissionComponent extends CrudPage {
   static Factory() {
     return {
       controller: PermissionComponent,
-      templateUrl: 'views/components/user_management/my-event.html'
+      templateUrl: 'views/components/user_management/permission.html'
     };
   }
 }

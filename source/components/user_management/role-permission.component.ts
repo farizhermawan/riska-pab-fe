@@ -64,7 +64,7 @@ export default class RolePermissionComponent extends CrudPage {
   static Factory() {
     return {
       controller: RolePermissionComponent,
-      templateUrl: 'views/components/user_management/role-my-event.html'
+      templateUrl: 'views/components/user_management/role-permission.html'
     };
   }
 }
