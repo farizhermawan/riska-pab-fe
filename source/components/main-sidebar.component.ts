@@ -1,14 +1,15 @@
-import MainMenu from "../menus/main.menu";
+import UserMenu from "../menus/user.menu";
+import UserManagementMenu from "../menus/user-management.menu";
 
 export default class MainSidebarComponent {
 
-  protected menus;
+  protected readonly menus;
 
   constructor(private $rootScope, private $state, private SweetAlert, private auth) {
-  }
-
-  $onInit() {
-    this.menus = new MainMenu();
+    this.menus = [
+      new UserMenu(),
+      new UserManagementMenu(),
+    ];
   }
 
   logout() {
@@ -30,13 +31,15 @@ export default class MainSidebarComponent {
   isMenuActive(menu) {
     let items = menu.getItems();
     for(let i=0; i<items.length; i++){
-      if (this.$state.current.name.indexOf(items[i].link) != -1) return true;
+      if (this.isMenuItemActive(items[i])) return true;
     }
     return false;
   };
 
   isMenuItemActive(menu) {
-    return this.$state.current.name.indexOf(menu.link) != -1;
+    let currentState = this.$state.current;
+    if (typeof currentState.base != 'undefined') return currentState.base.indexOf(menu.link) != -1;
+    return currentState.name.indexOf(menu.link) != -1;
   };
 
   canAccess(menu) {

@@ -27,6 +27,13 @@ export default class RoleMemberComponent extends CrudPage {
     this.loadRecords();
   }
 
+  protected async loadRecords() {
+    super.loadRecords();
+    await this.api.show().then((response) => {
+      this.record = response.data;
+    });
+  }
+
   protected callbackAfterLoadRecords = (resp) => {
     this.records = resp.data;
     this.loading(false);

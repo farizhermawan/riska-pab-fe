@@ -15,18 +15,20 @@ function config(locationProvider, stateProvider, urlRouterProvider) {
       needPermission: PermissionName.MENU_USER_MANAGEMENT,
       template: '<role></role>'
     })
-    .state('role-members', {
-      url: '/roles/:roleId/members',
-      needPermission: PermissionName.MENU_USER_MANAGEMENT,
-      template: '<role-member></role-member>'
-    })
     .state('permissions', {
       url: '/permissions',
       needPermission: PermissionName.MENU_USER_MANAGEMENT,
       template: '<permission></permission>'
     })
+    .state('role-members', {
+      url: '/roles/:roleId/members',
+      base: 'roles',
+      needPermission: PermissionName.MENU_USER_MANAGEMENT,
+      template: '<role-member></role-member>'
+    })
     .state('role-permissions', {
       url: '/roles/:roleId/permissions',
+      base: 'roles',
       needPermission: PermissionName.MENU_USER_MANAGEMENT,
       template: '<role-permission></role-permission>'
     })
