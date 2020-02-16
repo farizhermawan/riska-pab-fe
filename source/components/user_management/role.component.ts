@@ -1,4 +1,4 @@
-import CrudPage from "../../classes/crud-page";
+import CrudPage from "../../interfaces/crud-page";
 
 export default class RoleComponent extends CrudPage {
 

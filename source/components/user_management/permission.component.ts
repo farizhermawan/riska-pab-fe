@@ -1,5 +1,5 @@
-import CrudPage from "../../classes/crud-page";
-import ValidationUtil from "../../classes/validation-util";
+import CrudPage from "../../interfaces/crud-page";
+import ValidationUtil from "../../utils/validation-util";
 
 export default class PermissionComponent extends CrudPage {
 
@@ -34,7 +34,7 @@ export default class PermissionComponent extends CrudPage {
   static Factory() {
     return {
       controller: PermissionComponent,
-      templateUrl: 'views/components/user_management/permission.html'
+      templateUrl: 'views/components/user_management/my-event.html'
     };
   }
 }

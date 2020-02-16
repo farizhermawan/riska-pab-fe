@@ -1,4 +1,4 @@
-import PermissionName from "./classes/permission-name";
+import PermissionName from "./constants/permission-name";
 
 function config(locationProvider, stateProvider, urlRouterProvider) {
   locationProvider.html5Mode(true);
@@ -29,6 +29,11 @@ function config(locationProvider, stateProvider, urlRouterProvider) {
       url: '/roles/:roleId/permissions',
       needPermission: PermissionName.MENU_USER_MANAGEMENT,
       template: '<role-permission></role-permission>'
+    })
+    // User (me)
+    .state('me-events', {
+      url: '/me/events',
+      template: '<my-event></my-event>'
     })
     // Auth
     .state('auth-callback', {url: '/auth/callback', template: '<auth-callback></auth-callback>'});

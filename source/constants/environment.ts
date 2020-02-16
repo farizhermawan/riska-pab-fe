@@ -1,4 +1,4 @@
-export default class Constant {
+export default class Environment {
 
   static SERVICE_BASE_URL = window.location.hostname === 'portal.riska.or.id'
     ? "https://portal.riska.or.id/service/api"

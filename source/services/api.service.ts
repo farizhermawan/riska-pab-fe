@@ -1,7 +1,7 @@
-import Constant from "../classes/constant";
+import Environment from "../constants/environment";
 
 export default class APIService {
-  static API_URL = Constant.SERVICE_BASE_URL + "/v1";
+  static API_URL = Environment.SERVICE_BASE_URL + "/v1";
 
   constructor(private http) {
   }

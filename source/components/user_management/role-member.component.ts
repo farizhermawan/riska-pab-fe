@@ -1,5 +1,5 @@
-import CrudPage from "../../classes/crud-page";
-import ValidationUtil from "../../classes/validation-util";
+import CrudPage from "../../interfaces/crud-page";
+import ValidationUtil from "../../utils/validation-util";
 
 export default class RoleMemberComponent extends CrudPage {
 

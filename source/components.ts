@@ -7,6 +7,7 @@ import RoleComponent from "./components/user_management/role.component";
 import RoleMemberComponent from "./components/user_management/role-member.component";
 import PermissionComponent from "./components/user_management/permission.component";
 import RolePermissionComponent from "./components/user_management/role-permission.component";
+import MyEventComponent from "./components/user/my-event.component";
 
 // module
 let mod = angular.module('components', []);
@@ -20,6 +21,7 @@ mod.component('role', RoleComponent.Factory());
 mod.component('roleMember', RoleMemberComponent.Factory());
 mod.component('permission', PermissionComponent.Factory());
 mod.component('rolePermission', RolePermissionComponent.Factory());
+mod.component('myEvent', MyEventComponent.Factory());
 // other
 mod.component('authCallback', CallbackComponent.Factory());
 

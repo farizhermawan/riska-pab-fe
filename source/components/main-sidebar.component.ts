@@ -1,4 +1,4 @@
-import UserManagementMenu from "../menus/user-management.menu";
+import MainMenu from "../menus/main.menu";
 
 export default class MainSidebarComponent {
 
@@ -8,9 +8,7 @@ export default class MainSidebarComponent {
   }
 
   $onInit() {
-    this.menus = [
-      new UserManagementMenu,
-    ];
+    this.menus = new MainMenu();
   }
 
   logout() {

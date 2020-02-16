@@ -4,14 +4,14 @@ export default class Menu {
 
   constructor() {
     this.items = [];
-    this.registerMenu();
+    this.subMenu();
   }
 
   protected getTitle() {
     return "";
   }
 
-  protected registerMenu() {}
+  protected subMenu() {}
 
   protected getItems() {
     return this.items;
