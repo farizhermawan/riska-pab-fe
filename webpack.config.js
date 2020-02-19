@@ -1,6 +1,6 @@
 const webpack = require('webpack');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+const CreateSymlinkPlugin = require('create-symlink-webpack-plugin');
 
 const path = require('path');
 
@@ -19,10 +19,13 @@ module.exports = (env, argv) => {
     new HtmlWebPackPlugin({
       template: sourcePath + '/index.html'
     }),
-    new CopyWebpackPlugin([
-      {from: 'static'},
-      {from: 'views', to: distPath + '/views'},
-    ])
+    new CreateSymlinkPlugin([
+      {origin: '../views', symlink: 'views'},
+      // {origin: '../static/images', symlink: 'images'}, TODO: Research why this is failing
+      {origin: '../static/css', symlink: 'css'},
+      {origin: '../static/js', symlink: 'js'},
+      {origin: '../static/login.html', symlink: 'login.html'},
+    ]),
   ];
 
   plugins.push(new webpack.NamedModulesPlugin(), new webpack.HotModuleReplacementPlugin());
