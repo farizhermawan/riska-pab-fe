@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const path = require('path');
 
@@ -10,9 +11,18 @@ module.exports = (env, argv) => {
   const isProd = argv.mode === 'production';
 
   const plugins = [
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery",
+      moment: "moment",
+    }),
     new HtmlWebPackPlugin({
       template: sourcePath + '/index.html'
-    })
+    }),
+    new CopyWebpackPlugin([
+      {from: 'static'},
+      {from: 'views', to: distPath + '/views'},
+    ])
   ];
 
   plugins.push(new webpack.NamedModulesPlugin(), new webpack.HotModuleReplacementPlugin());
@@ -59,6 +69,10 @@ module.exports = (env, argv) => {
           options: {
             name: 'fonts/[name].[ext]'
           }
+        },
+        {
+          test: /\.css$/,
+          use: ['style-loader', 'css-loader']
         }
       ],
     },
@@ -84,7 +98,8 @@ module.exports = (env, argv) => {
     // devtool: 'eval-source-map',
     devServer: {
       contentBase: distPath,
-      hot: true
+      hot: true,
+      port: 3000
     }
   };
 

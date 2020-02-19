@@ -1,0 +1,11 @@
+require('@uirouter/angularjs');
+require('@popperjs/core');
+require('bootstrap');
+require('oi.select');
+require('angular-sweetalert');
+require('ng-input-currency');
+require('angular-moment-picker');
+require('angular-sanitize');
+require('angular-cookies');
+require('angularjs-input-file');
+require('ngstorage');
