@@ -25,6 +25,7 @@ module.exports = (env, argv) => {
       {origin: '../static/css', symlink: 'css'},
       {origin: '../static/js', symlink: 'js'},
       {origin: '../static/login.html', symlink: 'login.html'},
+      {origin: '../static/.htaccess', symlink: '.htaccess'},
     ]),
   ];
 
@@ -102,7 +103,10 @@ module.exports = (env, argv) => {
     devServer: {
       contentBase: distPath,
       hot: true,
-      port: 3000
+      port: 3000,
+      historyApiFallback: {
+        index: '/'
+      }
     }
   };
 

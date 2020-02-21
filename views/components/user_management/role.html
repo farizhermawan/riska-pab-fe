@@ -29,9 +29,9 @@
                             <td>{{item.description}}</td>
                             <td><a ui-sref="role-members({roleId: item.id})">{{item.users_count}} orang</a></td>
                             <td>
-                                <a ui-sref="role-permissions({roleId: item.id})" class="btn btn-xs btn-success"><i class="fa fa-key"></i></a>
-                                <a ng-click="$ctrl.updateRecord(item)" class="btn btn-xs btn-default"><i class="fa fa-edit"></i></a>
-                                <a ng-click="$ctrl.removeRecord(item)" class="btn btn-xs btn-danger"><i class="fa fa-trash-o"></i></a>
+                                <a ng-if="!$ctrl.isSuperAdmin(item)" ui-sref="role-permissions({roleId: item.id})" class="btn btn-xs btn-success"><i class="fa fa-key"></i></a>
+                                <a ng-if="!$ctrl.isSuperAdmin(item)" ng-click="$ctrl.updateRecord(item)" class="btn btn-xs btn-default"><i class="fa fa-edit"></i></a>
+                                <a ng-if="!$ctrl.isSuperAdmin(item)" ng-click="$ctrl.removeRecord(item)" class="btn btn-xs btn-danger"><i class="fa fa-trash-o"></i></a>
                             </td>
                         </tr>
                         <tr ng-if="$ctrl.records.length == 0">

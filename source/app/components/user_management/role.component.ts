@@ -25,6 +25,10 @@ export default class RoleComponent extends CrudPage {
     if (this.params.description == null || this.params.description == "") this.addError('description', 'Deskripsi role tidak boleh kosong');
   }
 
+  isSuperAdmin(role) {
+    return role.name == 'Super Admin';
+  }
+
   static Factory() {
     return {
       controller: RoleComponent,
