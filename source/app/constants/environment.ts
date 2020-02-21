@@ -1,6 +1,6 @@
 export default class Environment {
 
   static SERVICE_BASE_URL = window.location.hostname === 'portal.riska.or.id'
-    ? "https://portal.riska.or.id/service/api"
-    : "http://localhost:8000/api";
+    ? "https://api-portal.riska.or.id"
+    : "http://localhost:8000";
 }
