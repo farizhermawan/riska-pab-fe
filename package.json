@@ -8,7 +8,7 @@
     "url": "https://github.com/farizhermawan/riska-data-fe.git"
   },
   "scripts": {
-    "build": "rimraf dist && webpack --bail --progress --profile",
+    "build": "rimraf dist && webpack --bail",
     "start": "webpack-dev-server"
   },
   "dependencies": {
