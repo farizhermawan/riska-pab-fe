@@ -5,7 +5,7 @@ const CreateSymlinkPlugin = require('create-symlink-webpack-plugin');
 const path = require('path');
 
 const sourcePath = path.resolve(__dirname, 'source');
-const distPath = path.resolve(__dirname, 'dist');
+const distPath = path.resolve(__dirname, 'public');
 
 module.exports = (env, argv) => {
   const isProd = argv.mode === 'production';
