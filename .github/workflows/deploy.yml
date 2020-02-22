@@ -27,8 +27,9 @@ jobs:
       - run: npm ci
       - run: npm run build
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Push to dist
+        uses: ad-m/github-push-action@master
         with:
-          personal_token: ${{ secrets.PERSONAL_TOKEN }}
-          publish_dir: ./public
+          github_token: ${{ secrets.PERSONAL_TOKEN }}
+          branch: dist
+          directory: ./public
