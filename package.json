@@ -23,6 +23,7 @@
     "angular-sweetalert": "^1.1.2",
     "angularjs-input-file": "^4.2.1",
     "bootstrap": "^3.3.6",
+    "copy-webpack-plugin": "^5.1.1",
     "create-symlink-webpack-plugin": "^1.0.1",
     "jquery": "^3.4.1",
     "moment": "^2.22.2",
