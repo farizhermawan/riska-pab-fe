@@ -103,7 +103,9 @@ module.exports = (env, argv) => {
       historyApiFallback: {
         index: '/'
       }
-    }
+    },
+
+    stats: 'errors-only'
   };
 
   if (!isProd) {
