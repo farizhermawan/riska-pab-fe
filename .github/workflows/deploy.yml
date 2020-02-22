@@ -28,7 +28,7 @@ jobs:
         run: |
           npm ci
           npm run build
-      - name: Init git
+      - name: Do the git things
         run: |
           rm -rf .git
           cd ./public
@@ -36,6 +36,7 @@ jobs:
           git remote add origin git@github.com:${{github.repository}}.git
       - name: Commit files
         run: |
+          cd ./public
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git commit -m "Release" -a
@@ -45,3 +46,4 @@ jobs:
           github_token: ${{ secrets.PERSONAL_TOKEN }}
           branch: dist
           force: true
+          directory: ./public
