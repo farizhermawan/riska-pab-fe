@@ -29,7 +29,7 @@ export default class AuthService {
 
   login() {
     let ref = this.$location.search()['ref'];
-    window.location.href = ref == "login" ? AuthService.API_URL + '/auth/login' : '/login.html';
+    window.location.href = ref == "login" ? AuthService.API_URL + '/auth/login' : 'login.html';
   }
 
   logout() {
