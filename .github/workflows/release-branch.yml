@@ -19,10 +19,8 @@ jobs:
         run: |
           version=${GITHUB_REF#refs/tags/}
           echo ::set-output name=VERSION::$version
-      - name: Print version
-        run: echo ${{ steps.get_version.outputs.VERSION }}
       - name: Create branch
-        if: github.event_name == 'push'
+        if: github.event_name == 'create'
         uses: peterjgrainger/action-create-branch@v1.0.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
