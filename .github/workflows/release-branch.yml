@@ -6,7 +6,7 @@ on:
     tags:
       - 'v*'
 
-name: Create Release Branch
+name: Release Branch
 
 jobs:
   release:
@@ -17,12 +17,16 @@ jobs:
       - name: Get version
         id: get_version
         run: |
-          echo ${{ github.event_name }}
           version=${GITHUB_REF#refs/tags/}
           echo ::set-output name=VERSION::$version
       - name: Create branch
+        if: github.event_name == 'push'
         uses: peterjgrainger/action-create-branch@v1.0.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           branch: release/${{ steps.get_version.outputs.VERSION }}
+      - name: Remove branch
+        if: github.event_name == 'delete'
+        run: echo 'not implemented yet'
+        
