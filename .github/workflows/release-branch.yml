@@ -28,5 +28,7 @@ jobs:
           branch: release/${{ steps.get_version.outputs.VERSION }}
       - name: Remove branch
         if: github.event_name == 'delete'
-        run: echo 'not implemented yet'
-        
+        uses: dawidd6/action-delete-branch@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branches: release/${{ steps.get_version.outputs.VERSION }}        
