@@ -11,9 +11,13 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+      - name: Get version
+        run: |
+          version=${GITHUB_REF#refs/tags/}
+          echo "Detected version: $version"
       - name: Create branch
         uses: peterjgrainger/action-create-branch@v1.0.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          branch: release/${GITHUB_REF#refs/tags/}
+          branch: "release/$version"
