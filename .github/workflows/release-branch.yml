@@ -1,0 +1,17 @@
+on:
+  push:
+    tags:
+      - 'v*'
+
+name: Create Release Branch
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Create branch
+        uses: peterjgrainger/action-create-branch@v1.0.0
+        with:
+          branch: release/${{github.ref}#refs/tags/}
