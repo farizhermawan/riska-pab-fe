@@ -2,6 +2,9 @@ on:
   push:
     tags:
       - 'v*'
+  delete:
+    tags:
+      - 'v*'
 
 name: Create Release Branch
 
@@ -14,6 +17,7 @@ jobs:
       - name: Get version
         id: get_version
         run: |
+          echo ${{ github.event_name }}
           version=${GITHUB_REF#refs/tags/}
           echo ::set-output name=VERSION::$version
       - name: Create branch
