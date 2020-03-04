@@ -12,12 +12,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Get version
+        id: get_version
         run: |
           version=${GITHUB_REF#refs/tags/}
-          echo "Detected version: $version"
+          echo ::set-output name=VERSION::$version
       - name: Create branch
         uses: peterjgrainger/action-create-branch@v1.0.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          branch: "release/$version"
+          branch: release/${{ steps.get_version.outputs.VERSION }}
