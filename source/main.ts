@@ -1,31 +1,29 @@
 import * as angular from "angular";
 
 import './vendor';
-import './styles';
+import './styles.scss';
 import './custom';
 
 import components from './app/components';
-import directives from './app/directives';
 import services from './app/services';
 import config from './app/config';
 import run from "./app/run";
 
 let app = angular.module('angular-admin-lte', [
   'ui.router',
+  'moment-picker',
   'oi.select',
   'ngInputCurrency',
   'oitozero.ngSweetAlert',
-  'moment-picker',
+  'ds.clock',
   'ngSanitize',
-  'ngCookies',
-  'angularjs-input-file',
-  'ngStorage'
+  'ngCookies'
 ]);
 
 app.config(config);
 
 app.run(run);
 
-angular.bootstrap(document.body, [app.name, components.name, directives.name, services.name], {
+angular.bootstrap(document.body, [app.name, components.name, services.name], {
   strictDi: true
 });

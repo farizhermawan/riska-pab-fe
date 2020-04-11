@@ -1,28 +1,38 @@
 const webpack = require('webpack');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const path = require('path');
 
 const sourcePath = path.resolve(__dirname, 'source');
-const distPath = path.resolve(__dirname, 'public');
+const distPath = path.resolve(__dirname, 'dist');
 
 module.exports = (env, argv) => {
   const isProd = argv.mode === 'production';
 
   const plugins = [
+    new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: JSON.stringify(process.env.NODE_ENV)
+      }
+    }),
     new webpack.ProvidePlugin({
       $: "jquery",
       jQuery: "jquery",
       moment: "moment",
     }),
     new HtmlWebPackPlugin({
-      template: sourcePath + '/index.html'
+      template: sourcePath + '/views/index.html'
     }),
     new CopyWebpackPlugin([
       {from: 'static'},
-      {from: 'views', to: distPath + '/views'},
-    ])
+      {from: 'deploy.config'},
+      {from: sourcePath + '/views', to: distPath + '/views'},
+    ]),
+    new MiniCssExtractPlugin({
+      filename: '[name].bundle.[hash:8].css',
+    }),
   ];
 
   plugins.push(new webpack.NamedModulesPlugin(), new webpack.HotModuleReplacementPlugin());
@@ -33,7 +43,7 @@ module.exports = (env, argv) => {
     },
     output: {
       path: distPath,
-      filename: '[name].bundle.[hash:4].js',
+      filename: '[name].bundle.[hash:8].js',
     },
     module: {
       rules: [
@@ -50,7 +60,6 @@ module.exports = (env, argv) => {
               loader: 'ts-loader',
               options: {
                 configFile: sourcePath + '/../tsconfig.json',
-                // disable type checker - we will use it in fork plugin
                 transpileOnly: true,
               }
             }
@@ -69,6 +78,10 @@ module.exports = (env, argv) => {
           options: {
             name: 'fonts/[name].[ext]'
           }
+        },
+        {
+          test: /\.s[ac]ss$/i,
+          use: [!isProd ? 'style-loader' : MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
         },
         {
           test: /\.css$/,
@@ -97,15 +110,14 @@ module.exports = (env, argv) => {
     },
     // devtool: 'eval-source-map',
     devServer: {
-      contentBase: distPath,
+      contentBase: sourcePath + '/views',
       hot: true,
+      watchContentBase: true,
       port: 3000,
       historyApiFallback: {
         index: '/'
       }
-    },
-
-    stats: 'errors-only'
+    }
   };
 
   if (!isProd) {

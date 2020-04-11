@@ -345,7 +345,7 @@ function _init() {
       //Enable expand on hover for sidebar mini
       if ($.AdminLTE.options.sidebarExpandOnHover
           || ($('body').hasClass('fixed')
-              && $('body').hasClass('sidebar-mini'))) {
+          && $('body').hasClass('sidebar-mini'))) {
         this.expandOnHover();
       }
     },
@@ -672,17 +672,17 @@ function _init() {
 
 })(jQuery);
 
-/*
-* EXPLICIT BOX CONTROLS
-* -----------------------
-* This is a custom plugin to use with the component BOX. It allows you to activate
-* a box inserted in the DOM after the app.js was loaded, toggle and remove box.
-*
-* @type plugin
-* @usage $("#box-widget").activateBox();
-* @usage $("#box-widget").toggleBox();
-* @usage $("#box-widget").removeBox();
-*/
+ /*
+ * EXPLICIT BOX CONTROLS
+ * -----------------------
+ * This is a custom plugin to use with the component BOX. It allows you to activate
+ * a box inserted in the DOM after the app.js was loaded, toggle and remove box.
+ *
+ * @type plugin
+ * @usage $("#box-widget").activateBox();
+ * @usage $("#box-widget").toggleBox();
+ * @usage $("#box-widget").removeBox();
+ */
 (function ($) {
 
   'use strict';
@@ -691,12 +691,12 @@ function _init() {
     $.AdminLTE.boxWidget.activate(this);
   };
 
-  $.fn.toggleBox = function () {
+  $.fn.toggleBox = function(){
     var button = $($.AdminLTE.boxWidget.selectors.collapse, this);
     $.AdminLTE.boxWidget.collapse(button);
   };
 
-  $.fn.removeBox = function () {
+  $.fn.removeBox = function(){
     var button = $($.AdminLTE.boxWidget.selectors.remove, this);
     $.AdminLTE.boxWidget.remove(button);
   };

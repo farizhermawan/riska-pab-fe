@@ -28,8 +28,7 @@ function run($rootScope, $state, $location, $timeout, $q, auth) {
       auth.checkForAuthentication();
 
       auth.getUserProfile(true, afterLoadSession, function (response) {
-        if (response.status == 401) auth.logout();
-        else console.error(response);
+        console.error(response);
       });
     } else {
       $rootScope.isCallback = true;

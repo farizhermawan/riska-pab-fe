@@ -31,20 +31,24 @@ jobs:
       - name: Do the git things
         run: |
           rm -rf .git
-          cd ./public
+          cd ./dist
           git init
           git remote add origin git@github.com:${{github.repository}}.git
       - name: Commit files
         run: |
-          cd ./public
+          cd ./dist
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+          version=$(cut -d'.' -f4 <<< $(find . -name app.bundle.*.js))
+          date=$(date +%F)
+          touch build.txt
+          echo "$date ($version)" >> build.txt
           git add .
-          git commit -m "Release" -a
+          git commit -m "Release $version on $date" -a
       - name: Push to dist
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.PERSONAL_TOKEN }}
           branch: dist
           force: true
-          directory: ./public
+          directory: ./dist

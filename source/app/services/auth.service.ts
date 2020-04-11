@@ -3,7 +3,7 @@ import Environment from "../constants/environment";
 export default class AuthService {
   static API_URL = Environment.SERVICE_BASE_URL + "/v1";
 
-  constructor(private $http, private $location, private $q) {
+  constructor(private $http, private $location, private alert) {
   }
 
   callbackAuth(onSuccess, onError) {
@@ -28,14 +28,23 @@ export default class AuthService {
   }
 
   login() {
-    let ref = this.$location.search()['ref'];
-    window.location.href = ref == "login" ? AuthService.API_URL + '/auth/login' : 'login.html';
+    this.alert.swal({
+      title: "Portal Data RISKA",
+      text: "Silahkan login menggunakan akun google anda.",
+      type: "info",
+      showCancelButton: false,
+      confirmButtonColor: "#DD6B55",
+      confirmButtonText: "Sign in with Google"
+    }, (isConfirm) => {
+      if (isConfirm) window.location.href = AuthService.API_URL + '/auth/login';
+      else window.close();
+    });
   }
 
   logout() {
-    window.localStorage.clear();
     this.$http.defaults.headers.common.Authorization = "";
-    this.login();
+    window.localStorage.clear();
+    window.location.reload();
   }
 
   checkForAuthentication() {
@@ -69,4 +78,4 @@ export default class AuthService {
   }
 }
 
-AuthService.$inject = ['$http', '$location', '$q'];
+AuthService.$inject = ['$http', '$location', 'SweetAlert'];
