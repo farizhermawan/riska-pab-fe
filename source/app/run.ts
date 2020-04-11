@@ -27,9 +27,11 @@ function run($rootScope, $state, $location, $timeout, $q, auth) {
     if ($location.path() != '/auth/callback') {
       auth.checkForAuthentication();
 
-      auth.getUserProfile(true, afterLoadSession, function (response) {
-        console.error(response);
-      });
+      if (auth.isLoggedIn()) {
+        auth.getUserProfile(true, afterLoadSession, function (response) {
+          auth.logout();
+        });
+      }
     } else {
       $rootScope.isCallback = true;
     }
