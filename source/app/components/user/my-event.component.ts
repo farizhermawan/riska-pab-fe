@@ -20,8 +20,8 @@ export default class MyEventComponent extends CrudPage {
     this.dropdownEventRole.push('Ketua Acara');
     this.dropdownEventRole.push('Lainnya');
 
-    this.dropdownEventType.push({key: "Internal / Event RISKA", value: 1});
-    this.dropdownEventType.push({key: "Eksternal", value: 0});
+    this.dropdownEventType.push({key: "Internal / Event RISKA", value: true});
+    this.dropdownEventType.push({key: "Eksternal", value: false});
   }
 
   $onInit() {
