@@ -8,6 +8,7 @@ import RoleMemberComponent from "./components/user_management/role-member.compon
 import PermissionComponent from "./components/user_management/permission.component";
 import RolePermissionComponent from "./components/user_management/role-permission.component";
 import MyEventComponent from "./components/user/my-event.component";
+import UserComponent from "./components/user_management/user.component";
 
 // module
 let mod = angular.module('components', []);
@@ -17,6 +18,7 @@ mod.component('header', HeaderComponent.Factory());
 mod.component('mainSidebar', MainSidebarComponent.Factory());
 // pages
 mod.component('dashboard', DashboardComponent.Factory());
+mod.component('user', UserComponent.Factory());
 mod.component('role', RoleComponent.Factory());
 mod.component('roleMember', RoleMemberComponent.Factory());
 mod.component('permission', PermissionComponent.Factory());

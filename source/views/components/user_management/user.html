@@ -1,0 +1,70 @@
+<section class="content-header">
+    <h1>Users</h1>
+</section>
+
+<section class="content">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="box box-success" ng-if="$ctrl.view == 'read'">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Daftar User</h3>
+                    <div class="box-tools pull-right">
+                        <button ng-click="$ctrl.loadRecords()" type="button" class="btn btn-box-tool"><i class="fa fa-refresh"></i></button>
+                    </div>
+                </div>
+                <div class="box-body table-responsive">
+                    <a class="pull-right btn btn-sm btn-success" ng-click="$ctrl.setView('create')">Buat User</a>
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th>Nama Lengkap</th>
+                            <th>Panggilan</th>
+                            <th>Jenis Kelamin</th>
+                            <th>Kontak</th>
+                            <th>Email</th>
+                            <th>Domisili</th>
+                            <th>Status</th>
+                            <th style="width: 105px">&nbsp;</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="item in $ctrl.records">
+                            <td style="vertical-align: middle"><img src="/images/default_avatar.png" style="height: 40px; margin-right: 5px" alt="profile picture">{{item.fullname}}</td>
+                            <td style="vertical-align: middle">{{item.nickname}}</td>
+                            <td style="vertical-align: middle">{{item.gender}}</td>
+                            <td style="vertical-align: middle">{{item.phone_number}}<br/>{{item.whatsapp_number}}</td>
+                            <td style="vertical-align: middle">{{item.email}}</td>
+                            <td style="vertical-align: middle">{{item.district_id}}</td>
+                            <td style="vertical-align: middle">{{item.status}}</td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr ng-if="$ctrl.records.length == 0">
+                            <td colspan="9" class="text-center">Data Kosong</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="overlay" ng-if="$ctrl.isLoading()">
+                    <i class="fa fa-refresh fa-spin"></i>
+                </div>
+            </div>
+            <div class="box box-success" ng-if="$ctrl.view == 'create'">
+                <div class="box-header with-border">
+                    <h3 class="box-title">{{$ctrl.params.id == null ? 'Buat User' : 'Edit User #' + $ctrl.params.id}}</h3>
+                </div>
+                <form>
+                    <div class="box-body">
+                        Apologize, feature is not ready yet.
+                    </div>
+                </form>
+                <div class="box-footer">
+                    <a class="btn btn-default pull-left" ng-click="$ctrl.back()">Kembali</a>
+                </div>
+                <div class="overlay" ng-if="$ctrl.isLoading()">
+                    <i class="fa fa-refresh fa-spin"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -10,6 +10,11 @@ function config(locationProvider, stateProvider, urlRouterProvider) {
       template: '<dashboard></dashboard>'
     })
     // User Management
+    .state('users', {
+      url: '/users',
+      needPermission: PermissionName.MENU_USER_MANAGEMENT,
+      template: '<user></user>'
+    })
     .state('roles', {
       url: '/roles',
       needPermission: PermissionName.MENU_USER_MANAGEMENT,
