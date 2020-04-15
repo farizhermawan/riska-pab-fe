@@ -29,12 +29,17 @@
                         </thead>
                         <tbody>
                         <tr ng-repeat="item in $ctrl.records">
-                            <td style="vertical-align: middle"><img src="/images/default_avatar.png" style="height: 40px; margin-right: 5px" alt="profile picture">{{item.fullname}}</td>
+                            <td style="vertical-align: middle">
+                                <img class="display-picture" ng-src="{{item.photo || '/images/default_avatar.png'}}" ng-click="$ctrl.openPhoto(item.photo || '/images/default_avatar.png')" alt="profile picture">
+                                {{item.fullname}}
+                            </td>
                             <td style="vertical-align: middle">{{item.nickname}}</td>
                             <td style="vertical-align: middle">{{item.gender}}</td>
-                            <td style="vertical-align: middle">{{item.phone_number}}<br/>{{item.whatsapp_number}}</td>
+                            <td style="vertical-align: middle">
+                                <a class="text-black" ng-if="item.has_phone && item.phone_number != item.whatsapp_number"><i class="fa fa-phone"></i> {{item.phone_number}}<br/></a>
+                                <a class="text-black" ng-if="item.has_whatsapp" ng-href="{{item.whatsapp_link}}" target="_blank"><i class="fa fa-whatsapp"></i> {{item.whatsapp_number}}</a></td>
                             <td style="vertical-align: middle">{{item.email}}</td>
-                            <td style="vertical-align: middle">{{item.district_id}}</td>
+                            <td style="vertical-align: middle">{{item.district_name}}, {{item.regency_name}}, {{item.province_name}}</td>
                             <td style="vertical-align: middle">{{item.status}}</td>
                             <td>
                             </td>

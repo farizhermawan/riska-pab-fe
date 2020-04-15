@@ -2,7 +2,7 @@ import CrudPage from "../../interfaces/crud-page";
 
 export default class UserComponent extends CrudPage {
 
-  constructor(private apiService, alert) {
+  constructor(private apiService, private lightbox, alert) {
     super(
       {},
       {alert: alert}
@@ -20,6 +20,10 @@ export default class UserComponent extends CrudPage {
     this.loadRecords();
   }
 
+  openPhoto(src) {
+    this.lightbox.openModal([{url: src, thumbUrl: src}], 0);
+  }
+
   protected validationRules() {
 
   }
@@ -32,4 +36,4 @@ export default class UserComponent extends CrudPage {
   }
 }
 
-UserComponent.$inject = ['apiService', 'SweetAlert'];
+UserComponent.$inject = ['apiService', 'Lightbox', 'SweetAlert'];

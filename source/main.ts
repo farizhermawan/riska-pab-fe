@@ -17,7 +17,9 @@ let app = angular.module('angular-admin-lte', [
   'oitozero.ngSweetAlert',
   'ds.clock',
   'ngSanitize',
-  'ngCookies'
+  'ngCookies',
+  'ui.bootstrap',
+  'bootstrapLightbox',
 ]);
 
 app.config(config);

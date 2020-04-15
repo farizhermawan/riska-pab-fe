@@ -11,3 +11,5 @@ require('angular-cookies');
 require('angularjs-input-file');
 require('ngstorage');
 require('angular-clock');
+require('angular-ui-bootstrap');
+require('angular-bootstrap-lightbox');
