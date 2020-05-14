@@ -1,5 +1,6 @@
 import UserMenu from "../menus/user.menu";
 import UserManagementMenu from "../menus/user-management.menu";
+import AdminMenu from "../menus/admin.menu";
 
 export default class MainSidebarComponent {
 
@@ -9,6 +10,7 @@ export default class MainSidebarComponent {
     this.menus = [
       new UserMenu(),
       new UserManagementMenu(),
+      new AdminMenu(),
     ];
   }
 

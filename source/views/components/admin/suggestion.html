@@ -1,0 +1,83 @@
+<section class="content-header">
+    <h1>Suggestion</h1>
+</section>
+
+<section class="content">
+    <div class="row">
+        <div class="col-sm-12 col-lg-6">
+            <div class="box box-success" ng-if="$ctrl.view == 'read'">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Daftar Suggestion</h3>
+                    <div class="box-tools pull-right">
+                        <button ng-click="$ctrl.loadRecords()" type="button" class="btn btn-box-tool"><i class="fa fa-refresh"></i></button>
+                    </div>
+                </div>
+                <div class="box-body table-responsive">
+                    <a class="pull-right btn btn-sm btn-success" ng-click="$ctrl.setView('create')">Tambah Suggestion</a>
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            
+                            <th>Group</th>
+                            <th>Item</th>
+                            <th>Display Text</th>
+                            <th style="width: 70px">&nbsp;</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="item in $ctrl.records">
+                            
+                            <td>{{item.group}}</td>
+                            <td>{{item.item}}</td>
+                            <td>{{item.display_text}}</td>
+                            <td>
+                                <a ng-click="$ctrl.updateRecord(item)" class="btn btn-xs btn-default"><i class="fa fa-edit"></i></a>
+                                <a ng-click="$ctrl.removeRecord(item)" class="btn btn-xs btn-danger"><i class="fa fa-trash-o"></i></a>
+                            </td>
+                        </tr>
+                        <tr ng-if="$ctrl.records.length == 0">
+                            <td colspan="5" class="text-center">Data Kosong</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="overlay" ng-if="$ctrl.isLoading()">
+                    <i class="fa fa-refresh fa-spin"></i>
+                </div>
+            </div>
+            <div class="box box-success" ng-if="$ctrl.view == 'create'">
+                <div class="box-header with-border">
+                    <h3 class="box-title">{{$ctrl.params.id == null ? 'Tambah Suggestion' : 'Edit Suggestion #' + $ctrl.params.name}}</h3>
+                </div>
+                <form>
+                    <div class="box-body">
+                        <div class="form-group" ng-class="{'has-error': $ctrl.hasError('name')}">
+                            <label>Group<small class="text-red">*</small></label>
+                            <input type="text" class="form-control" autocomplete="off" placeholder="Masukan Group" ng-model="$ctrl.params.group">
+                            <span ng-if="$ctrl.hasError('name')" class="help-block">{{$ctrl.error['name']}}</span>
+                        </div>
+                        <div class="form-group" ng-class="{'has-error': $ctrl.hasError('item')}">
+                            <label>Item<small class="text-red">*</small></label>
+                            <input type="text" class="form-control"  autocomplete="off" placeholder="Masukan Item" ng-model="$ctrl.params.item">
+                            <span ng-if="$ctrl.hasError('item')" class="help-block">{{$ctrl.error['item']}}</span>
+                        </div>
+                        <div class="form-group" ng-class="{'has-error': $ctrl.hasError('displayText')}">
+                            <label>Display Text<small class="text-red">*</small></label>
+                            <input type="text" class="form-control"  autocomplete="off" placeholder="Masukan Display Text" ng-model="$ctrl.params.display_text">
+                            <span ng-if="$ctrl.hasError('displayText')" class="help-block">{{$ctrl.error['displayText']}}</span>
+                        </div>
+                        <div class="form-group">
+                            <a class="btn btn-success pull-right" ng-click="$ctrl.saveRecord()">Simpan</a>
+                        </div>
+                    </div>
+                </form>
+                <div class="box-footer">
+                    <a class="btn btn-default pull-left" ng-click="$ctrl.back()">Kembali</a>
+                </div>
+                <div class="overlay" ng-if="$ctrl.isLoading()">
+                    <i class="fa fa-refresh fa-spin"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

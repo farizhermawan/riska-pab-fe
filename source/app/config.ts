@@ -42,6 +42,12 @@ function config(locationProvider, stateProvider, urlRouterProvider) {
       url: '/me/events',
       template: '<my-event></my-event>'
     })
+    // Admin
+    .state('suggestions', {
+      url: '/suggestions',
+      template: '<suggestion></suggestion>'
+    })
+
     // Auth
     .state('auth-callback', {url: '/auth/callback', template: '<auth-callback></auth-callback>'});
 }
